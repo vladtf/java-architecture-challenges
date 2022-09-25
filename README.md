@@ -1,4 +1,8 @@
-# Project OOP - Vladislav Tiftilov
+# java-architecture-challenges
+
+This will be my own version of Design Kata where I try to implement some programming patterns.
+
+Currently working on Dependency Injection (mostly rethinking stuff I already know from spring).
 
 ## Implementation
 
@@ -10,6 +14,7 @@
 * Proxy - to log information about BattlePokemon (wasAttacked, won, lost)
 * Producer/Consumer - multithreaded battle (in ApplicationRunner is being started a thread "Arena" that starts 2 thread
   for each Pokemon. Each thread generates events and reads them from the enemy thread).
+* TODO: add other patterns or interesting implementations
 
 Optional:
 

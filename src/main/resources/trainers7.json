@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Trainer1",
+    "age": 17,
+    "pokemonsName": [
+      "Charmander",
+      "Snorlax",
+      "Eevee"
+    ]
+  },
+  {
+    "name": "Trainer2",
+    "age": 17,
+    "pokemonsName": [
+      "Meowth",
+      "Pikachu",
+      "Vulpix"
+    ]
+  }
+]

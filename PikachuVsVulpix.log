@@ -1,0 +1,81 @@
+[Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=16, stunned=false, cd1=4, cd2=0
+[Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=14, stunned=false, cd1=0, cd2=8
+[Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+[Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+[Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+[Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+[Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+[Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+[Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=14, stunned=false, cd1=0, cd2=7
+[Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=15, stunned=false, cd1=3, cd2=0
+[Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+[Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+[Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+[Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+[Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=14, stunned=false, cd1=0, cd2=6
+[Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+[Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+[Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+[Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=14, stunned=false, cd1=2, cd2=0
+[Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+[Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+[Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+[Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+[Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+
+
+==================== Vulpix before Pikachu second ability (hp=14, stunned=false, cd1=0, cd2=5) ==================== 
+[Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=14, stunned=false, cd1=0, cd2=5
+
+==================== Pikachu before second ability (hp=13, stunned=false, cd1=1, cd2=0) ==================== 
+[Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=13, stunned=false, cd1=1, cd2=0
+
+
+==================== Pikachu used second ability ==================== 
+[Pikachu/Vulpix] DEBUG - Pokemon Pikachu used second ability: Ability{damage=4, isStun=true, isDodge=true, cooldown=5}
+
+
+==================== Pikachu was attacked ==================== 
+[Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+
+==================== Pikachu dodged ==================== 
+[Pikachu/Vulpix] DEBUG - Pokemon Pikachu dodged.
+
+==================== Vulpix attacked ==================== 
+[Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+
+==================== Vulpix stunned ==================== 
+[Vulpix/Pikachu] DEBUG - Pokemon Vulpix was stunned.
+
+==================== Pikachu after attack (hp=13, stunned=false, cd1=0, cd2=6) ==================== 
+[Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=13, stunned=false, cd1=0, cd2=6
+
+
+==================== Vulpix after attack (hp=10, stunned=true, cd1=0, cd2=4) ==================== 
+[Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=10, stunned=true, cd1=0, cd2=4
+
+
+==================== Vulpix does an action when stunned ==================== 
+[Vulpix/Pikachu] DEBUG - Pokemon Vulpix is stunned and cannot do an action
+[Vulpix/Pikachu] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}
+
+
+[Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+[Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+[Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=4, stunned=false, cd1=0, cd2=3
+[Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=13, stunned=false, cd1=5, cd2=5
+[Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+[Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+[Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+[Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+[Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+[Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+[Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=4, stunned=false, cd1=0, cd2=2
+[Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=12, stunned=false, cd1=4, cd2=4
+[Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+[Vulpix/Pikachu] DEBUG - Pokemon Vulpix used first ability: Ability{damage=8, isStun=true, isDodge=false, cooldown=6}
+[Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack=null, ability={damage=8, stun=true, dodge=false, cooldown=6}}
+[Vulpix/Pikachu] DEBUG - myAction: {attack=null, ability={damage=8, stun=true, dodge=false, cooldown=6}}; enemyAction: {attack={normal=null, special=4}, ability=null}
+[Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+[Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+[Pikachu/Vulpix] DEBUG - Pokemon Pikachu was stunned.

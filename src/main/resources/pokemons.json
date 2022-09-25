@@ -1,0 +1,255 @@
+[
+  {
+    "name": "Neutrel1",
+    "health": 10,
+    "attack": {
+      "normalAttack": 3
+    },
+    "defense": {
+      "normalDefense": 1,
+      "specialDefense": 1
+    }
+  },
+  {
+    "name": "Neutrel2",
+    "health": 20,
+    "attack": {
+      "normalAttack": 4
+    },
+    "defense": {
+      "normalDefense": 1,
+      "specialDefense": 1
+    }
+  },
+  {
+    "name": "Pikachu",
+    "health": 35,
+    "attack": {
+      "specialAttack": 4
+    },
+    "defense": {
+      "normalDefense": 2,
+      "specialDefense": 3
+    },
+    "firstAbility": {
+      "damage": 6,
+      "isStun": false,
+      "isDodge": false,
+      "cooldown": 4
+    },
+    "secondAbility": {
+      "damage": 4,
+      "isStun": true,
+      "isDodge": true,
+      "cooldown": 5
+    }
+  },
+  {
+    "name": "Bulbasaur",
+    "health": 42,
+    "attack": {
+      "specialAttack": 5
+    },
+    "defense": {
+      "normalDefense": 3,
+      "specialDefense": 1
+    },
+    "firstAbility": {
+      "damage": 6,
+      "isStun": false,
+      "isDodge": false,
+      "cooldown": 4
+    },
+    "secondAbility": {
+      "damage": 5,
+      "isStun": false,
+      "isDodge": false,
+      "cooldown": 3
+    }
+  },
+  {
+    "name": "Charmander",
+    "health": 50,
+    "attack": {
+      "normalAttack": 4
+    },
+    "defense": {
+      "normalDefense": 3,
+      "specialDefense": 2
+    },
+    "firstAbility": {
+      "damage": 4,
+      "isStun": true,
+      "isDodge": false,
+      "cooldown": 4
+    },
+    "secondAbility": {
+      "damage": 7,
+      "isStun": false,
+      "isDodge": false,
+      "cooldown": 6
+    }
+  },
+  {
+    "name": "Squirtle",
+    "health": 60,
+    "attack": {
+      "specialAttack": 3
+    },
+    "defense": {
+      "normalDefense": 5,
+      "specialDefense": 5
+    },
+    "firstAbility": {
+      "damage": 4,
+      "isStun": false,
+      "isDodge": false,
+      "cooldown": 3
+    },
+    "secondAbility": {
+      "damage": 2,
+      "isStun": true,
+      "isDodge": false,
+      "cooldown": 2
+    }
+  },
+  {
+    "name": "Snorlax",
+    "health": 62,
+    "attack": {
+      "normalAttack": 3
+    },
+    "defense": {
+      "normalDefense": 6,
+      "specialDefense": 4
+    },
+    "firstAbility": {
+      "damage": 4,
+      "isStun": true,
+      "isDodge": false,
+      "cooldown": 5
+    },
+    "secondAbility": {
+      "damage": 0,
+      "isStun": false,
+      "isDodge": true,
+      "cooldown": 5
+    }
+  },
+  {
+    "name": "Vulpix",
+    "health": 36,
+    "attack": {
+      "normalAttack": 5
+    },
+    "defense": {
+      "normalDefense": 2,
+      "specialDefense": 4
+    },
+    "firstAbility": {
+      "damage": 8,
+      "isStun": true,
+      "isDodge": false,
+      "cooldown": 6
+    },
+    "secondAbility": {
+      "damage": 2,
+      "isStun": false,
+      "isDodge": true,
+      "cooldown": 7
+    }
+  },
+  {
+    "name": "Eevee",
+    "health": 39,
+    "attack": {
+      "specialAttack": 4
+    },
+    "defense": {
+      "normalDefense": 3,
+      "specialDefense": 3
+    },
+    "firstAbility": {
+      "damage": 5,
+      "isStun": false,
+      "isDodge": false,
+      "cooldown": 3
+    },
+    "secondAbility": {
+      "damage": 3,
+      "isStun": true,
+      "isDodge": false,
+      "cooldown": 3
+    }
+  },
+  {
+    "name": "Jigglypuff",
+    "health": 34,
+    "attack": {
+      "normalAttack": 4
+    },
+    "defense": {
+      "normalDefense": 2,
+      "specialDefense": 3
+    },
+    "firstAbility": {
+      "damage": 4,
+      "isStun": true,
+      "isDodge": false,
+      "cooldown": 4
+    },
+    "secondAbility": {
+      "damage": 3,
+      "isStun": true,
+      "isDodge": false,
+      "cooldown": 4
+    }
+  },
+  {
+    "name": "Meowth",
+    "health": 43,
+    "attack": {
+      "normalAttack": 3
+    },
+    "defense": {
+      "normalDefense": 4,
+      "specialDefense": 2
+    },
+
+    "firstAbility": {
+      "damage": 5,
+      "isStun": false,
+      "isDodge": true,
+      "cooldown": 4
+    },
+    "secondAbility": {
+      "damage": 1,
+      "isStun": false,
+      "isDodge": true,
+      "cooldown": 3
+    }
+  },
+  {
+    "name": "Psyduck",
+    "health": 43,
+    "attack": {
+      "normalAttack": 3
+    },
+    "defense": {
+      "normalDefense": 4,
+      "specialDefense": 3
+    },
+
+    "firstAbility": {
+      "damage": 2,
+      "isStun": false,
+      "isDodge": false,
+      "cooldown": 4
+    },
+    "secondAbility": {
+      "damage": 2,
+      "isStun": true,
+      "isDodge": false,
+      "cooldown": 5
+    }
+  }]

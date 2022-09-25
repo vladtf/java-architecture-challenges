@@ -1,0 +1,55 @@
+[
+  {
+    "name": "Scut",
+    "attack": {},
+    "defense": {
+      "normalDefense": 2,
+      "specialDefense": 2
+    }
+  },
+  {
+    "name": "Vestă",
+    "health": 10,
+    "attack": {},
+    "defense": {}
+  },
+  {
+    "name": "Săbiuță",
+    "attack": {
+      "normalAttack": 3
+    },
+    "defense": {}
+  },
+  {
+    "name": "Baghetă Magică",
+    "attack": {
+      "specialAttack": 3
+    },
+    "defense": {}
+  },
+  {
+    "name": "Vitamine",
+    "health": 2,
+    "attack": {
+      "normalAttack": 2,
+      "specialAttack": 2
+    },
+    "defense": {}
+  },
+  {
+    "name": "Brad de Crăciun",
+    "attack": {
+      "normalAttack": 3
+    },
+    "defense": {
+      "normalDefense": 1
+    }
+  },
+  {
+    "name": "Pelerină",
+    "attack": {},
+    "defense": {
+      "specialDefense": 3
+    }
+  }
+]

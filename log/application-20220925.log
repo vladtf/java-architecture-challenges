@@ -1,0 +1,1447 @@
+01:53:57 [main] INFO  - Registered new bean: com.oop.project.repositories.PokemonRepository
+01:53:57 [main] INFO  - Reading objects from: pokemons.json
+01:53:57 [main] INFO  - Registered new bean: com.oop.project.services.PokemonService
+01:53:57 [main] INFO  - Registered new bean: com.oop.project.ApplicationRunner
+01:53:57 [main] INFO  - Registered new bean: com.oop.project.repositories.PokemonRepository
+01:53:57 [main] INFO  - Registered new bean: com.oop.project.repositories.ItemRepository
+01:53:57 [main] INFO  - Registered new bean: com.oop.project.repositories.TrainerRepository
+01:53:57 [main] INFO  - Start application.
+01:53:57 [main] INFO  - Reading objects from: trainers.json
+01:53:57 [main] INFO  - Reading objects from: items.json
+01:53:57 [main] INFO  - Registered new bean: com.oop.project.services.ItemService
+01:53:57 [main] INFO  - Reading objects from: pokemons.json
+01:53:57 [main] INFO  - Registered new bean: com.oop.project.services.PokemonService
+01:53:57 [main] INFO  - Reading objects from: trainers.json
+01:53:57 [main] INFO  - Registered new bean: com.oop.project.services.TrainerService
+01:53:57 [main] INFO  - Registered new bean: com.oop.project.models.BattlePokemon
+01:53:57 [main] INFO  - Registered new bean: com.oop.project.models.BattlePokemon
+01:53:57 [main] INFO  - Registered new bean: com.oop.project.models.BattlePokemon
+01:53:57 [main] INFO  - Reading objects from: trainers.json
+01:53:57 [main] INFO  - Reading objects from: items.json
+01:53:57 [main] INFO  - Registered new bean: com.oop.project.services.ItemService
+01:53:57 [main] INFO  - Reading objects from: pokemons.json
+01:53:57 [main] INFO  - Registered new bean: com.oop.project.services.PokemonService
+01:53:57 [main] INFO  - Reading objects from: trainers.json
+01:53:57 [main] INFO  - Registered new bean: com.oop.project.services.TrainerService
+01:53:57 [main] INFO  - Registered new bean: com.oop.project.models.BattlePokemon
+01:53:57 [main] INFO  - Registered new bean: com.oop.project.models.BattlePokemon
+01:53:57 [main] INFO  - Registered new bean: com.oop.project.models.BattlePokemon
+01:53:57 [main] INFO  - Trainer1: Trainer{name='Trainer1', age=10, pokemons=null}
+01:53:57 [main] INFO  - Trainer2: Trainer{name='Trainer2', age=10, pokemons=null}
+01:53:57 [main] INFO  - Registered new bean: com.oop.project.models.BattlePokemon
+01:53:57 [main] INFO  - Registered new bean: com.oop.project.models.BattlePokemon
+01:53:57 [T1_vs_N1] INFO  - Starting battle: Pikachu vs Neutrel1
+01:53:57 [T2_vs_N1] INFO  - Starting battle: Vulpix vs Neutrel1
+01:53:57 [T1_vs_N1] INFO  - Pikachu: 37
+01:53:57 [T1_vs_N1] INFO  - Neutrel1: 10
+01:53:57 [Neutrel1/Pikachu] DEBUG - Pokemon Neutrel1 did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:57 [Pikachu/Neutrel1] DEBUG - Pokemon Pikachu used second ability: Ability{damage=4, isStun=true, isDodge=true, cooldown=5}
+01:53:57 [T2_vs_N1] INFO  - Vulpix: 38
+01:53:57 [Neutrel1/Pikachu] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=4, stun=true, dodge=true, cooldown=5}}
+01:53:57 [T2_vs_N1] INFO  - Neutrel1: 10
+01:53:57 [Neutrel1/Pikachu] DEBUG - Neutrel1 was attacked.
+01:53:57 [Pikachu/Neutrel1] DEBUG - myAction: {attack=null, ability={damage=4, stun=true, dodge=true, cooldown=5}}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:57 [Vulpix/Neutrel1] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:57 [Pikachu/Neutrel1] DEBUG - Pikachu was attacked.
+01:53:57 [Neutrel1/Vulpix] DEBUG - Pokemon Neutrel1 did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:57 [Vulpix/Neutrel1] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:57 [Neutrel1/Vulpix] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:57 [Vulpix/Neutrel1] DEBUG - Vulpix was attacked.
+01:53:57 [Neutrel1/Vulpix] DEBUG - Neutrel1 was attacked.
+01:53:57 [Neutrel1/Pikachu] DEBUG - Pokemon Neutrel1 was stunned.
+01:53:57 [Pikachu/Neutrel1] DEBUG - Pokemon Pikachu dodged.
+01:53:57 [Neutrel1/Pikachu] INFO  - Pokemon Neutrel1 after an event: Neutrel1: hp=6, stunned=true, cd1=0, cd2=0
+01:53:57 [Vulpix/Neutrel1] INFO  - Pokemon Vulpix after an event: Vulpix: hp=38, stunned=false, cd1=0, cd2=0
+01:53:57 [Pikachu/Neutrel1] INFO  - Pokemon Pikachu after an event: Pikachu: hp=37, stunned=false, cd1=0, cd2=6
+01:53:57 [Neutrel1/Vulpix] INFO  - Pokemon Neutrel1 after an event: Neutrel1: hp=6, stunned=false, cd1=0, cd2=0
+01:53:57 [Neutrel1/Pikachu] DEBUG - Pokemon Neutrel1 is stunned and cannot do an action
+01:53:57 [Vulpix/Neutrel1] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:57 [Pikachu/Neutrel1] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:57 [Neutrel1/Vulpix] DEBUG - Pokemon Neutrel1 did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:57 [Pikachu/Neutrel1] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack=null, ability=null}
+01:53:57 [Neutrel1/Pikachu] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:57 [Vulpix/Neutrel1] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:57 [Neutrel1/Vulpix] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:57 [Pikachu/Neutrel1] DEBUG - Pikachu was attacked.
+01:53:57 [Vulpix/Neutrel1] DEBUG - Vulpix was attacked.
+01:53:57 [Neutrel1/Vulpix] DEBUG - Neutrel1 was attacked.
+01:53:57 [Neutrel1/Pikachu] DEBUG - Neutrel1 was attacked.
+01:53:57 [Pikachu/Neutrel1] INFO  - Pokemon Pikachu after an event: Pikachu: hp=37, stunned=false, cd1=0, cd2=5
+01:53:57 [Vulpix/Neutrel1] INFO  - Pokemon Vulpix after an event: Vulpix: hp=38, stunned=false, cd1=0, cd2=0
+01:53:57 [Pikachu/Neutrel1] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:57 [Neutrel1/Pikachu] INFO  - Pokemon Neutrel1 after an event: Neutrel1: hp=3, stunned=false, cd1=0, cd2=0
+01:53:57 [Neutrel1/Vulpix] INFO  - Pokemon Neutrel1 after an event: Neutrel1: hp=2, stunned=false, cd1=0, cd2=0
+01:53:57 [Vulpix/Neutrel1] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:57 [Neutrel1/Pikachu] DEBUG - Pokemon Neutrel1 did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:57 [Neutrel1/Vulpix] DEBUG - Pokemon Neutrel1 did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:57 [Neutrel1/Pikachu] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:57 [Pikachu/Neutrel1] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:57 [Neutrel1/Vulpix] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:57 [Vulpix/Neutrel1] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:57 [Neutrel1/Pikachu] DEBUG - Neutrel1 was attacked.
+01:53:57 [Pikachu/Neutrel1] DEBUG - Pikachu was attacked.
+01:53:57 [Vulpix/Neutrel1] DEBUG - Vulpix was attacked.
+01:53:57 [Neutrel1/Vulpix] DEBUG - Neutrel1 was attacked.
+01:53:57 [Pikachu/Neutrel1] INFO  - Pokemon Pikachu after an event: Pikachu: hp=37, stunned=false, cd1=0, cd2=4
+01:53:57 [Neutrel1/Pikachu] INFO  - Pokemon Neutrel1 after an event: Neutrel1: hp=0, stunned=false, cd1=0, cd2=0
+01:53:57 [Vulpix/Neutrel1] INFO  - Pokemon Vulpix after an event: Vulpix: hp=38, stunned=false, cd1=0, cd2=0
+01:53:57 [Neutrel1/Vulpix] INFO  - Pokemon Neutrel1 after an event: Neutrel1: hp=-2, stunned=false, cd1=0, cd2=0
+01:53:58 [T1_vs_N1] INFO  - After battle Pikachu: Pikachu: hp=37, stunned=false, cd1=0, cd2=4
+01:53:58 [T1_vs_N1] INFO  - After battle Neutrel1: Neutrel1: hp=0, stunned=false, cd1=0, cd2=0
+01:53:58 [T1_vs_N1] INFO  - Winner: Pikachu: hp=37, stunned=false, cd1=0, cd2=4
+01:53:58 [T1_vs_N1] DEBUG - Pikachu won a match.
+01:53:58 [T1_vs_N1] DEBUG - Neutrel1 lost a match.
+01:53:58 [T2_vs_N1] INFO  - After battle Vulpix: Vulpix: hp=38, stunned=false, cd1=0, cd2=0
+01:53:58 [T2_vs_N1] INFO  - After battle Neutrel1: Neutrel1: hp=-2, stunned=false, cd1=0, cd2=0
+01:53:58 [T2_vs_N1] INFO  - Winner: Vulpix: hp=38, stunned=false, cd1=0, cd2=0
+01:53:58 [T2_vs_N1] DEBUG - Vulpix won a match.
+01:53:58 [T2_vs_N1] DEBUG - Neutrel1 lost a match.
+01:53:58 [main] INFO  - Registered new bean: com.oop.project.models.BattlePokemon
+01:53:58 [main] INFO  - Registered new bean: com.oop.project.models.BattlePokemon
+01:53:58 [T1_vs_N2] INFO  - Starting battle: Pikachu vs Neutrel2
+01:53:58 [T2_vs_N2] INFO  - Starting battle: Vulpix vs Neutrel2
+01:53:58 [T1_vs_N2] INFO  - Pikachu: 38
+01:53:58 [T1_vs_N2] INFO  - Neutrel2: 20
+01:53:58 [T2_vs_N2] INFO  - Vulpix: 39
+01:53:58 [Pikachu/Neutrel2] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:58 [Neutrel2/Pikachu] DEBUG - Pokemon Neutrel2 used second ability: Ability{damage=0, isStun=null, isDodge=null, cooldown=0}
+01:53:58 [T2_vs_N2] INFO  - Neutrel2: 20
+01:53:58 [Vulpix/Neutrel2] DEBUG - Pokemon Vulpix used first ability: Ability{damage=8, isStun=true, isDodge=false, cooldown=6}
+01:53:58 [Neutrel2/Pikachu] DEBUG - myAction: {attack=null, ability={damage=0, stun=null, dodge=null, cooldown=0}}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:58 [Neutrel2/Vulpix] DEBUG - Pokemon Neutrel2 did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:58 [Pikachu/Neutrel2] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack=null, ability={damage=0, stun=null, dodge=null, cooldown=0}}
+01:53:58 [Neutrel2/Vulpix] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=8, stun=true, dodge=false, cooldown=6}}
+01:53:58 [Pikachu/Neutrel2] DEBUG - Pikachu was attacked.
+01:53:58 [Vulpix/Neutrel2] DEBUG - myAction: {attack=null, ability={damage=8, stun=true, dodge=false, cooldown=6}}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:58 [Neutrel2/Pikachu] DEBUG - Neutrel2 was attacked.
+01:53:58 [Neutrel2/Vulpix] DEBUG - Neutrel2 was attacked.
+01:53:58 [Neutrel2/Vulpix] DEBUG - Pokemon Neutrel2 was stunned.
+01:53:58 [Vulpix/Neutrel2] DEBUG - Vulpix was attacked.
+01:53:58 [Neutrel2/Pikachu] INFO  - Pokemon Neutrel2 after an event: Neutrel2: hp=17, stunned=false, cd1=0, cd2=1
+01:53:58 [Pikachu/Neutrel2] INFO  - Pokemon Pikachu after an event: Pikachu: hp=38, stunned=false, cd1=0, cd2=0
+01:53:58 [Neutrel2/Vulpix] INFO  - Pokemon Neutrel2 after an event: Neutrel2: hp=12, stunned=true, cd1=0, cd2=1
+01:53:58 [Vulpix/Neutrel2] INFO  - Pokemon Vulpix after an event: Vulpix: hp=39, stunned=false, cd1=7, cd2=0
+01:53:58 [Neutrel2/Pikachu] DEBUG - Pokemon Neutrel2 did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:58 [Pikachu/Neutrel2] DEBUG - Pokemon Pikachu used second ability: Ability{damage=4, isStun=true, isDodge=true, cooldown=5}
+01:53:58 [Neutrel2/Vulpix] DEBUG - Pokemon Neutrel2 is stunned and cannot do an action
+01:53:58 [Vulpix/Neutrel2] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:58 [Pikachu/Neutrel2] DEBUG - myAction: {attack=null, ability={damage=4, stun=true, dodge=true, cooldown=5}}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:58 [Neutrel2/Pikachu] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=4, stun=true, dodge=true, cooldown=5}}
+01:53:58 [Neutrel2/Vulpix] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:58 [Vulpix/Neutrel2] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack=null, ability=null}
+01:53:58 [Pikachu/Neutrel2] DEBUG - Pikachu was attacked.
+01:53:58 [Neutrel2/Pikachu] DEBUG - Neutrel2 was attacked.
+01:53:58 [Neutrel2/Vulpix] DEBUG - Neutrel2 was attacked.
+01:53:58 [Vulpix/Neutrel2] DEBUG - Vulpix was attacked.
+01:53:58 [Pikachu/Neutrel2] DEBUG - Pokemon Pikachu dodged.
+01:53:58 [Neutrel2/Pikachu] DEBUG - Pokemon Neutrel2 was stunned.
+01:53:58 [Vulpix/Neutrel2] INFO  - Pokemon Vulpix after an event: Vulpix: hp=39, stunned=false, cd1=6, cd2=0
+01:53:58 [Pikachu/Neutrel2] INFO  - Pokemon Pikachu after an event: Pikachu: hp=38, stunned=false, cd1=0, cd2=6
+01:53:58 [Neutrel2/Vulpix] INFO  - Pokemon Neutrel2 after an event: Neutrel2: hp=8, stunned=false, cd1=0, cd2=0
+01:53:58 [Neutrel2/Pikachu] INFO  - Pokemon Neutrel2 after an event: Neutrel2: hp=13, stunned=true, cd1=0, cd2=0
+01:53:58 [Neutrel2/Vulpix] DEBUG - Pokemon Neutrel2 did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:58 [Pikachu/Neutrel2] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:58 [Vulpix/Neutrel2] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:58 [Neutrel2/Pikachu] DEBUG - Pokemon Neutrel2 is stunned and cannot do an action
+01:53:58 [Vulpix/Neutrel2] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:58 [Pikachu/Neutrel2] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack=null, ability=null}
+01:53:58 [Neutrel2/Vulpix] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:58 [Neutrel2/Pikachu] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:58 [Vulpix/Neutrel2] DEBUG - Vulpix was attacked.
+01:53:58 [Pikachu/Neutrel2] DEBUG - Pikachu was attacked.
+01:53:58 [Neutrel2/Vulpix] DEBUG - Neutrel2 was attacked.
+01:53:58 [Neutrel2/Pikachu] DEBUG - Neutrel2 was attacked.
+01:53:58 [Vulpix/Neutrel2] INFO  - Pokemon Vulpix after an event: Vulpix: hp=39, stunned=false, cd1=5, cd2=0
+01:53:58 [Vulpix/Neutrel2] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:58 [Pikachu/Neutrel2] INFO  - Pokemon Pikachu after an event: Pikachu: hp=38, stunned=false, cd1=0, cd2=5
+01:53:58 [Neutrel2/Vulpix] INFO  - Pokemon Neutrel2 after an event: Neutrel2: hp=4, stunned=false, cd1=0, cd2=0
+01:53:58 [Neutrel2/Pikachu] INFO  - Pokemon Neutrel2 after an event: Neutrel2: hp=10, stunned=false, cd1=0, cd2=0
+01:53:58 [Pikachu/Neutrel2] DEBUG - Pokemon Pikachu used first ability: Ability{damage=6, isStun=false, isDodge=false, cooldown=4}
+01:53:58 [Neutrel2/Vulpix] DEBUG - Pokemon Neutrel2 did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:58 [Neutrel2/Pikachu] DEBUG - Pokemon Neutrel2 did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:58 [Neutrel2/Vulpix] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:58 [Vulpix/Neutrel2] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:58 [Neutrel2/Pikachu] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}
+01:53:58 [Pikachu/Neutrel2] DEBUG - myAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:58 [Neutrel2/Vulpix] DEBUG - Neutrel2 was attacked.
+01:53:58 [Vulpix/Neutrel2] DEBUG - Vulpix was attacked.
+01:53:58 [Neutrel2/Pikachu] DEBUG - Neutrel2 was attacked.
+01:53:58 [Pikachu/Neutrel2] DEBUG - Pikachu was attacked.
+01:53:58 [Neutrel2/Vulpix] INFO  - Pokemon Neutrel2 after an event: Neutrel2: hp=0, stunned=false, cd1=0, cd2=0
+01:53:58 [Neutrel2/Pikachu] INFO  - Pokemon Neutrel2 after an event: Neutrel2: hp=4, stunned=false, cd1=0, cd2=0
+01:53:58 [Vulpix/Neutrel2] INFO  - Pokemon Vulpix after an event: Vulpix: hp=39, stunned=false, cd1=4, cd2=0
+01:53:58 [Pikachu/Neutrel2] INFO  - Pokemon Pikachu after an event: Pikachu: hp=38, stunned=false, cd1=5, cd2=4
+01:53:58 [Neutrel2/Pikachu] DEBUG - Pokemon Neutrel2 did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:58 [Pikachu/Neutrel2] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:58 [Pikachu/Neutrel2] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:58 [Neutrel2/Pikachu] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:58 [Neutrel2/Pikachu] DEBUG - Neutrel2 was attacked.
+01:53:58 [Pikachu/Neutrel2] DEBUG - Pikachu was attacked.
+01:53:58 [Neutrel2/Pikachu] INFO  - Pokemon Neutrel2 after an event: Neutrel2: hp=1, stunned=false, cd1=0, cd2=0
+01:53:58 [Pikachu/Neutrel2] INFO  - Pokemon Pikachu after an event: Pikachu: hp=38, stunned=false, cd1=4, cd2=3
+01:53:58 [Neutrel2/Pikachu] DEBUG - Pokemon Neutrel2 did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:58 [Pikachu/Neutrel2] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:58 [Pikachu/Neutrel2] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:58 [Neutrel2/Pikachu] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:58 [Pikachu/Neutrel2] DEBUG - Pikachu was attacked.
+01:53:58 [Neutrel2/Pikachu] DEBUG - Neutrel2 was attacked.
+01:53:58 [Neutrel2/Pikachu] INFO  - Pokemon Neutrel2 after an event: Neutrel2: hp=-2, stunned=false, cd1=0, cd2=0
+01:53:58 [Pikachu/Neutrel2] INFO  - Pokemon Pikachu after an event: Pikachu: hp=38, stunned=false, cd1=3, cd2=2
+01:53:59 [T1_vs_N2] INFO  - After battle Pikachu: Pikachu: hp=38, stunned=false, cd1=3, cd2=2
+01:53:59 [T2_vs_N2] INFO  - After battle Vulpix: Vulpix: hp=39, stunned=false, cd1=4, cd2=0
+01:53:59 [T1_vs_N2] INFO  - After battle Neutrel2: Neutrel2: hp=-2, stunned=false, cd1=0, cd2=0
+01:53:59 [T2_vs_N2] INFO  - After battle Neutrel2: Neutrel2: hp=0, stunned=false, cd1=0, cd2=0
+01:53:59 [T1_vs_N2] INFO  - Winner: Pikachu: hp=38, stunned=false, cd1=3, cd2=2
+01:53:59 [T1_vs_N2] DEBUG - Pikachu won a match.
+01:53:59 [T2_vs_N2] INFO  - Winner: Vulpix: hp=39, stunned=false, cd1=4, cd2=0
+01:53:59 [T1_vs_N2] DEBUG - Neutrel2 lost a match.
+01:53:59 [T2_vs_N2] DEBUG - Vulpix won a match.
+01:53:59 [T2_vs_N2] DEBUG - Neutrel2 lost a match.
+01:53:59 [T1_vs_T2_1] INFO  - Starting battle: Pikachu vs Vulpix
+01:53:59 [T1_vs_T2_2] INFO  - Starting battle: Bulbasaur vs Snorlax
+01:53:59 [T1_vs_T2_3] INFO  - Starting battle: Charmander vs Squirtle
+01:53:59 [T1_vs_T2_2] INFO  - Bulbasaur: 44
+01:53:59 [T1_vs_T2_1] INFO  - Pikachu: 39
+01:53:59 [T1_vs_T2_1] INFO  - Vulpix: 40
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [T1_vs_T2_3] INFO  - Charmander: 52
+01:53:59 [T1_vs_T2_2] INFO  - Snorlax: 64
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur used first ability: Ability{damage=6, isStun=false, isDodge=false, cooldown=4}
+01:53:59 [T1_vs_T2_3] INFO  - Squirtle: 70
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax used first ability: Ability{damage=4, isStun=true, isDodge=false, cooldown=5}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}; enemyAction: {attack=null, ability={damage=4, stun=true, dodge=false, cooldown=5}}
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack=null, ability={damage=4, stun=true, dodge=false, cooldown=5}}; enemyAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur was stunned.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=70, stunned=false, cd1=0, cd2=0
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=40, stunned=true, cd1=5, cd2=0
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=51, stunned=false, cd1=0, cd2=0
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=58, stunned=false, cd1=6, cd2=0
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander used second ability: Ability{damage=7, isStun=false, isDodge=false, cooldown=6}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur is stunned and cannot do an action
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack=null, ability={damage=7, stun=false, dodge=false, cooldown=6}}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack=null, ability={damage=7, stun=false, dodge=false, cooldown=6}}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack=null, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=39, stunned=false, cd1=0, cd2=0
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=50, stunned=false, cd1=0, cd2=7
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=63, stunned=false, cd1=0, cd2=0
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=40, stunned=false, cd1=4, cd2=0
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=40, stunned=false, cd1=0, cd2=0
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=58, stunned=false, cd1=5, cd2=0
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix used first ability: Ability{damage=8, isStun=true, isDodge=false, cooldown=6}
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=63, stunned=false, cd1=0, cd2=0
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=49, stunned=false, cd1=0, cd2=6
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack=null, ability={damage=8, stun=true, dodge=false, cooldown=6}}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack=null, ability={damage=8, stun=true, dodge=false, cooldown=6}}
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu was stunned.
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=40, stunned=false, cd1=7, cd2=0
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=31, stunned=true, cd1=0, cd2=0
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=63, stunned=false, cd1=0, cd2=0
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu is stunned and cannot do an action
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=40, stunned=false, cd1=3, cd2=0
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle used first ability: Ability{damage=4, isStun=false, isDodge=false, cooldown=3}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=58, stunned=false, cd1=4, cd2=0
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack=null, ability=null}
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=48, stunned=false, cd1=0, cd2=5
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=31, stunned=false, cd1=0, cd2=0
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=4, stun=false, dodge=false, cooldown=3}}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=40, stunned=false, cd1=6, cd2=0
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack=null, ability={damage=4, stun=false, dodge=false, cooldown=3}}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix used second ability: Ability{damage=2, isStun=false, isDodge=true, cooldown=7}
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=40, stunned=false, cd1=2, cd2=0
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack=null, ability={damage=2, stun=false, dodge=true, cooldown=7}}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack=null, ability={damage=2, stun=false, dodge=true, cooldown=7}}
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=58, stunned=false, cd1=3, cd2=0
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=44, stunned=false, cd1=0, cd2=4
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix dodged.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=63, stunned=false, cd1=4, cd2=0
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=29, stunned=false, cd1=0, cd2=0
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu used first ability: Ability{damage=6, isStun=false, isDodge=false, cooldown=4}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=40, stunned=false, cd1=1, cd2=0
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=40, stunned=false, cd1=5, cd2=8
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=58, stunned=false, cd1=2, cd2=0
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=43, stunned=false, cd1=0, cd2=3
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander used first ability: Ability{damage=4, isStun=true, isDodge=false, cooldown=4}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=63, stunned=false, cd1=3, cd2=0
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=34, stunned=false, cd1=4, cd2=7
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=58, stunned=false, cd1=1, cd2=0
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax used first ability: Ability{damage=4, isStun=true, isDodge=false, cooldown=5}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack=null, ability={damage=4, stun=true, dodge=false, cooldown=4}}
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=29, stunned=false, cd1=5, cd2=0
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack=null, ability={damage=4, stun=true, dodge=false, cooldown=4}}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=40, stunned=false, cd1=0, cd2=0
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle was stunned.
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack=null, ability={damage=4, stun=true, dodge=false, cooldown=5}}
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=59, stunned=true, cd1=2, cd2=0
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle is stunned and cannot do an action
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack=null, ability={damage=4, stun=true, dodge=false, cooldown=5}}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=42, stunned=false, cd1=5, cd2=2
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur was stunned.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=34, stunned=false, cd1=3, cd2=6
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=36, stunned=true, cd1=0, cd2=0
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=29, stunned=false, cd1=4, cd2=0
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur is stunned and cannot do an action
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=58, stunned=false, cd1=6, cd2=0
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack=null, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack=null, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=42, stunned=false, cd1=4, cd2=1
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=59, stunned=false, cd1=1, cd2=0
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander used second ability: Ability{damage=7, isStun=false, isDodge=false, cooldown=6}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle used second ability: Ability{damage=2, isStun=true, isDodge=false, cooldown=2}
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=58, stunned=false, cd1=5, cd2=0
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=34, stunned=false, cd1=2, cd2=5
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=36, stunned=false, cd1=0, cd2=0
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack=null, ability={damage=7, stun=false, dodge=false, cooldown=6}}; enemyAction: {attack=null, ability={damage=2, stun=true, dodge=false, cooldown=2}}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax used second ability: Ability{damage=0, isStun=false, isDodge=true, cooldown=5}
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack=null, ability={damage=2, stun=true, dodge=false, cooldown=2}}; enemyAction: {attack=null, ability={damage=7, stun=false, dodge=false, cooldown=6}}
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=29, stunned=false, cd1=3, cd2=0
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander was stunned.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack=null, ability={damage=0, stun=false, dodge=true, cooldown=5}}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack=null, ability={damage=0, stun=false, dodge=true, cooldown=5}}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu used second ability: Ability{damage=4, isStun=true, isDodge=true, cooldown=5}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=4, stun=true, dodge=true, cooldown=5}}
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=40, stunned=true, cd1=3, cd2=7
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack=null, ability={damage=4, stun=true, dodge=true, cooldown=5}}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=52, stunned=false, cd1=0, cd2=3
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax dodged.
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix was stunned.
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander is stunned and cannot do an action
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=36, stunned=false, cd1=0, cd2=0
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack=null, ability=null}
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu dodged.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur used second ability: Ability{damage=5, isStun=false, isDodge=false, cooldown=3}
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=30, stunned=true, cd1=1, cd2=4
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=58, stunned=false, cd1=4, cd2=6
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix is stunned and cannot do an action
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=29, stunned=false, cd1=2, cd2=6
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=39, stunned=false, cd1=2, cd2=6
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=52, stunned=false, cd1=0, cd2=2
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack=null, ability=null}
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=36, stunned=false, cd1=0, cd2=4
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=53, stunned=false, cd1=3, cd2=5
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=52, stunned=false, cd1=0, cd2=1
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=38, stunned=false, cd1=1, cd2=5
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=53, stunned=false, cd1=2, cd2=4
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=29, stunned=false, cd1=1, cd2=5
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=30, stunned=false, cd1=0, cd2=3
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=36, stunned=false, cd1=0, cd2=3
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=37, stunned=false, cd1=0, cd2=4
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=36, stunned=false, cd1=0, cd2=2
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=52, stunned=false, cd1=0, cd2=0
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle used second ability: Ability{damage=2, isStun=true, isDodge=false, cooldown=2}
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack=null, ability={damage=2, stun=true, dodge=false, cooldown=2}}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=2, stun=true, dodge=false, cooldown=2}}
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=53, stunned=false, cd1=1, cd2=3
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=29, stunned=false, cd1=0, cd2=4
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander was stunned.
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=52, stunned=false, cd1=0, cd2=3
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle used first ability: Ability{damage=4, isStun=false, isDodge=false, cooldown=3}
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=30, stunned=false, cd1=0, cd2=2
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=53, stunned=false, cd1=0, cd2=2
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=36, stunned=false, cd1=0, cd2=1
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=35, stunned=true, cd1=0, cd2=3
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander is stunned and cannot do an action
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack=null, ability={damage=4, stun=false, dodge=false, cooldown=3}}; enemyAction: {attack=null, ability=null}
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack=null, ability={damage=4, stun=false, dodge=false, cooldown=3}}
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=30, stunned=false, cd1=0, cd2=1
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=36, stunned=false, cd1=0, cd2=0
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix used second ability: Ability{damage=2, isStun=false, isDodge=true, cooldown=7}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=29, stunned=false, cd1=0, cd2=3
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur used first ability: Ability{damage=6, isStun=false, isDodge=false, cooldown=4}
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=31, stunned=false, cd1=0, cd2=2
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack=null, ability={damage=2, stun=false, dodge=true, cooldown=7}}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=53, stunned=false, cd1=0, cd2=1
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=52, stunned=false, cd1=4, cd2=2
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack=null, ability={damage=2, stun=false, dodge=true, cooldown=7}}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=27, stunned=false, cd1=0, cd2=2
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix dodged.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu used first ability: Ability{damage=6, isStun=false, isDodge=false, cooldown=4}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=30, stunned=false, cd1=0, cd2=8
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=47, stunned=false, cd1=0, cd2=0
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=36, stunned=false, cd1=5, cd2=0
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax used second ability: Ability{damage=0, isStun=false, isDodge=true, cooldown=5}
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=52, stunned=false, cd1=3, cd2=1
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack=null, ability={damage=0, stun=false, dodge=true, cooldown=5}}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle used second ability: Ability{damage=2, isStun=true, isDodge=false, cooldown=2}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack=null, ability={damage=0, stun=false, dodge=true, cooldown=5}}
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=30, stunned=false, cd1=0, cd2=1
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax dodged.
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=2, stun=true, dodge=false, cooldown=2}}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=47, stunned=false, cd1=0, cd2=6
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack=null, ability={damage=2, stun=true, dodge=false, cooldown=2}}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=36, stunned=false, cd1=4, cd2=0
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=24, stunned=false, cd1=0, cd2=7
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander was stunned.
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=27, stunned=false, cd1=5, cd2=1
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=52, stunned=false, cd1=2, cd2=3
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu used second ability: Ability{damage=4, isStun=true, isDodge=true, cooldown=5}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack=null, ability={damage=4, stun=true, dodge=true, cooldown=5}}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=36, stunned=false, cd1=3, cd2=0
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=4, stun=true, dodge=true, cooldown=5}}
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=47, stunned=false, cd1=0, cd2=5
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu dodged.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix was stunned.
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=28, stunned=true, cd1=0, cd2=0
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=27, stunned=false, cd1=4, cd2=6
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander is stunned and cannot do an action
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=20, stunned=true, cd1=0, cd2=6
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix is stunned and cannot do an action
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack=null, ability=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=27, stunned=false, cd1=0, cd2=0
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=36, stunned=false, cd1=2, cd2=0
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack=null, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur used second ability: Ability{damage=5, isStun=false, isDodge=false, cooldown=3}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=52, stunned=false, cd1=1, cd2=2
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=47, stunned=false, cd1=0, cd2=4
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=20, stunned=false, cd1=0, cd2=5
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=27, stunned=false, cd1=3, cd2=5
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=42, stunned=false, cd1=0, cd2=3
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=26, stunned=false, cd1=0, cd2=0
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=36, stunned=false, cd1=1, cd2=4
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=52, stunned=false, cd1=0, cd2=1
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=20, stunned=false, cd1=0, cd2=4
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=52, stunned=false, cd1=0, cd2=0
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=42, stunned=false, cd1=0, cd2=2
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=25, stunned=false, cd1=0, cd2=0
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=27, stunned=false, cd1=2, cd2=4
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=36, stunned=false, cd1=0, cd2=3
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur used first ability: Ability{damage=6, isStun=false, isDodge=false, cooldown=4}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=24, stunned=false, cd1=0, cd2=0
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=20, stunned=false, cd1=0, cd2=3
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=52, stunned=false, cd1=0, cd2=0
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix used first ability: Ability{damage=8, isStun=true, isDodge=false, cooldown=6}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=36, stunned=false, cd1=5, cd2=2
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander used first ability: Ability{damage=4, isStun=true, isDodge=false, cooldown=4}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=27, stunned=false, cd1=1, cd2=3
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack=null, ability={damage=4, stun=true, dodge=false, cooldown=4}}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack=null, ability={damage=4, stun=true, dodge=false, cooldown=4}}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack=null, ability={damage=8, stun=true, dodge=false, cooldown=6}}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle was stunned.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=36, stunned=false, cd1=0, cd2=1
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=23, stunned=false, cd1=5, cd2=0
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu was stunned.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander used second ability: Ability{damage=7, isStun=false, isDodge=false, cooldown=6}
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack=null, ability={damage=8, stun=true, dodge=false, cooldown=6}}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=48, stunned=true, cd1=0, cd2=0
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle is stunned and cannot do an action
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack=null, ability={damage=7, stun=false, dodge=false, cooldown=6}}
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack=null, ability={damage=7, stun=false, dodge=false, cooldown=6}}; enemyAction: {attack=null, ability=null}
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=19, stunned=true, cd1=0, cd2=2
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=36, stunned=false, cd1=0, cd2=0
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu is stunned and cannot do an action
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax used second ability: Ability{damage=0, isStun=false, isDodge=true, cooldown=5}
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=20, stunned=false, cd1=7, cd2=2
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=23, stunned=false, cd1=4, cd2=7
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=41, stunned=false, cd1=0, cd2=0
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack=null, ability=null}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=36, stunned=false, cd1=4, cd2=1
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=20, stunned=false, cd1=6, cd2=1
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack=null, ability={damage=0, stun=false, dodge=true, cooldown=5}}
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=19, stunned=false, cd1=0, cd2=1
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix used second ability: Ability{damage=2, isStun=false, isDodge=true, cooldown=7}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu used second ability: Ability{damage=4, isStun=true, isDodge=true, cooldown=5}
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=41, stunned=false, cd1=0, cd2=0
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack=null, ability={damage=0, stun=false, dodge=true, cooldown=5}}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack=null, ability={damage=4, stun=true, dodge=true, cooldown=5}}; enemyAction: {attack=null, ability={damage=2, stun=false, dodge=true, cooldown=7}}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=36, stunned=false, cd1=3, cd2=0
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack=null, ability={damage=2, stun=false, dodge=true, cooldown=7}}; enemyAction: {attack=null, ability={damage=4, stun=true, dodge=true, cooldown=5}}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax dodged.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur used second ability: Ability{damage=5, isStun=false, isDodge=false, cooldown=3}
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=22, stunned=false, cd1=3, cd2=6
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu dodged.
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix dodged.
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=36, stunned=false, cd1=0, cd2=6
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=19, stunned=false, cd1=0, cd2=6
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=20, stunned=false, cd1=5, cd2=8
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu used first ability: Ability{damage=6, isStun=false, isDodge=false, cooldown=4}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=21, stunned=false, cd1=2, cd2=5
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=31, stunned=false, cd1=0, cd2=5
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=14, stunned=false, cd1=4, cd2=7
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=36, stunned=false, cd1=2, cd2=4
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=41, stunned=false, cd1=0, cd2=0
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=36, stunned=false, cd1=1, cd2=3
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=19, stunned=false, cd1=5, cd2=5
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=31, stunned=false, cd1=0, cd2=4
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax used first ability: Ability{damage=4, isStun=true, isDodge=false, cooldown=5}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack=null, ability={damage=4, stun=true, dodge=false, cooldown=5}}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=41, stunned=false, cd1=0, cd2=0
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=19, stunned=false, cd1=4, cd2=4
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack=null, ability={damage=4, stun=true, dodge=false, cooldown=5}}
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=31, stunned=false, cd1=6, cd2=3
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=20, stunned=false, cd1=1, cd2=4
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur was stunned.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=14, stunned=false, cd1=3, cd2=6
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=32, stunned=true, cd1=0, cd2=2
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur is stunned and cannot do an action
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=19, stunned=false, cd1=0, cd2=3
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=41, stunned=false, cd1=0, cd2=0
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack=null, ability=null}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=14, stunned=false, cd1=2, cd2=5
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=32, stunned=false, cd1=0, cd2=1
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=19, stunned=false, cd1=3, cd2=3
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=41, stunned=false, cd1=0, cd2=0
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=18, stunned=false, cd1=0, cd2=2
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=31, stunned=false, cd1=5, cd2=2
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=19, stunned=false, cd1=2, cd2=2
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=14, stunned=false, cd1=1, cd2=4
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=17, stunned=false, cd1=0, cd2=1
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=41, stunned=false, cd1=0, cd2=0
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=31, stunned=false, cd1=4, cd2=1
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=32, stunned=false, cd1=0, cd2=0
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=19, stunned=false, cd1=1, cd2=1
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=14, stunned=false, cd1=0, cd2=3
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=41, stunned=false, cd1=0, cd2=0
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=32, stunned=false, cd1=0, cd2=0
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=31, stunned=false, cd1=3, cd2=0
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=16, stunned=false, cd1=0, cd2=0
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax used second ability: Ability{damage=0, isStun=false, isDodge=true, cooldown=5}
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack=null, ability={damage=0, stun=false, dodge=true, cooldown=5}}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack=null, ability={damage=0, stun=false, dodge=true, cooldown=5}}
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax dodged.
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=14, stunned=false, cd1=0, cd2=2
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=41, stunned=false, cd1=0, cd2=0
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=15, stunned=false, cd1=0, cd2=0
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=31, stunned=false, cd1=2, cd2=6
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=19, stunned=false, cd1=0, cd2=0
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander used first ability: Ability{damage=4, isStun=true, isDodge=false, cooldown=4}
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu used first ability: Ability{damage=6, isStun=false, isDodge=false, cooldown=4}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack=null, ability={damage=4, stun=true, dodge=false, cooldown=4}}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack=null, ability={damage=4, stun=true, dodge=false, cooldown=4}}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=32, stunned=false, cd1=0, cd2=0
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle was stunned.
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=19, stunned=false, cd1=5, cd2=0
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=14, stunned=false, cd1=5, cd2=0
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur used first ability: Ability{damage=6, isStun=false, isDodge=false, cooldown=4}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=37, stunned=true, cd1=0, cd2=0
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle is stunned and cannot do an action
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=8, stunned=false, cd1=0, cd2=1
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack=null, ability=null}
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=37, stunned=false, cd1=0, cd2=0
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=14, stunned=false, cd1=4, cd2=0
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=32, stunned=false, cd1=5, cd2=0
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=25, stunned=false, cd1=1, cd2=5
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=8, stunned=false, cd1=0, cd2=0
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax used first ability: Ability{damage=4, isStun=true, isDodge=false, cooldown=5}
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=19, stunned=false, cd1=4, cd2=0
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack=null, ability={damage=4, stun=true, dodge=false, cooldown=5}}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack=null, ability={damage=4, stun=true, dodge=false, cooldown=5}}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=25, stunned=false, cd1=6, cd2=4
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=37, stunned=false, cd1=0, cd2=0
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur was stunned.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=19, stunned=false, cd1=3, cd2=0
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=13, stunned=false, cd1=3, cd2=0
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle used first ability: Ability{damage=4, isStun=false, isDodge=false, cooldown=3}
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=8, stunned=false, cd1=0, cd2=0
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu used second ability: Ability{damage=4, isStun=true, isDodge=true, cooldown=5}
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=4, stun=false, dodge=false, cooldown=3}}
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=28, stunned=true, cd1=4, cd2=0
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=4, stun=true, dodge=true, cooldown=5}}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack=null, ability={damage=4, stun=false, dodge=false, cooldown=3}}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur is stunned and cannot do an action
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack=null, ability={damage=4, stun=true, dodge=true, cooldown=5}}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu dodged.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack=null, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix was stunned.
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=9, stunned=false, cd1=2, cd2=0
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=37, stunned=false, cd1=4, cd2=0
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=19, stunned=false, cd1=2, cd2=6
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=28, stunned=false, cd1=3, cd2=0
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=25, stunned=false, cd1=5, cd2=3
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=4, stunned=true, cd1=0, cd2=0
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix is stunned and cannot do an action
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=37, stunned=false, cd1=3, cd2=0
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack=null, ability=null}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle used second ability: Ability{damage=2, isStun=true, isDodge=false, cooldown=2}
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=8, stunned=false, cd1=1, cd2=0
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=4, stunned=false, cd1=0, cd2=0
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=28, stunned=false, cd1=2, cd2=0
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=19, stunned=false, cd1=1, cd2=5
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix used second ability: Ability{damage=2, isStun=false, isDodge=true, cooldown=7}
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur used second ability: Ability{damage=5, isStun=false, isDodge=false, cooldown=3}
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=25, stunned=false, cd1=4, cd2=2
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu used first ability: Ability{damage=6, isStun=false, isDodge=false, cooldown=4}
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=2, stun=true, dodge=false, cooldown=2}}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack=null, ability={damage=2, stun=false, dodge=true, cooldown=7}}; enemyAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack=null, ability={damage=2, stun=true, dodge=false, cooldown=2}}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander was stunned.
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}; enemyAction: {attack=null, ability={damage=2, stun=false, dodge=true, cooldown=7}}
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix dodged.
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=28, stunned=false, cd1=1, cd2=4
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=17, stunned=false, cd1=5, cd2=4
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=6, stunned=true, cd1=0, cd2=0
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=37, stunned=false, cd1=2, cd2=3
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=4, stunned=false, cd1=0, cd2=8
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander is stunned and cannot do an action
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack=null, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=4, stunned=false, cd1=0, cd2=7
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=37, stunned=false, cd1=1, cd2=2
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=17, stunned=false, cd1=4, cd2=3
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle used first ability: Ability{damage=4, isStun=false, isDodge=false, cooldown=3}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=20, stunned=false, cd1=3, cd2=1
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=5, stunned=false, cd1=0, cd2=0
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=4, stunned=false, cd1=0, cd2=6
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=17, stunned=false, cd1=3, cd2=2
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=4, stun=false, dodge=false, cooldown=3}}
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=28, stunned=false, cd1=0, cd2=3
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack=null, ability={damage=4, stun=false, dodge=false, cooldown=3}}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=1, stunned=false, cd1=0, cd2=0
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=20, stunned=false, cd1=2, cd2=0
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=37, stunned=false, cd1=4, cd2=1
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Pokemon Squirtle did a simple attack: Attack{normalAttack=null, specialAttack=3}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Charmander/Squirtle] DEBUG - Pokemon Charmander did a simple attack: Attack{normalAttack=4, specialAttack=null}
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=4, stunned=false, cd1=0, cd2=5
+01:53:59 [Charmander/Squirtle] DEBUG - myAction: {attack={normal=4, special=null}, ability=null}; enemyAction: {attack={normal=null, special=3}, ability=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=28, stunned=false, cd1=0, cd2=2
+01:53:59 [Charmander/Squirtle] DEBUG - Charmander was attacked.
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=20, stunned=false, cd1=1, cd2=0
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=17, stunned=false, cd1=2, cd2=1
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax used second ability: Ability{damage=0, isStun=false, isDodge=true, cooldown=5}
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu did a simple attack: Attack{normalAttack=null, specialAttack=4}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack=null, ability={damage=0, stun=false, dodge=true, cooldown=5}}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Charmander/Squirtle] INFO  - Pokemon Charmander after an event: Charmander: hp=0, stunned=false, cd1=0, cd2=0
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack={normal=null, special=4}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=4}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax dodged.
+01:53:59 [Squirtle/Charmander] DEBUG - myAction: {attack={normal=null, special=3}, ability=null}; enemyAction: {attack={normal=4, special=null}, ability=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Squirtle/Charmander] DEBUG - Squirtle was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack=null, ability={damage=0, stun=false, dodge=true, cooldown=5}}
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=20, stunned=false, cd1=0, cd2=6
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Squirtle/Charmander] INFO  - Pokemon Squirtle after an event: Squirtle: hp=37, stunned=false, cd1=3, cd2=0
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=17, stunned=false, cd1=1, cd2=0
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=28, stunned=false, cd1=0, cd2=1
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=4, stunned=false, cd1=0, cd2=4
+01:53:59 [Pikachu/Vulpix] DEBUG - Pokemon Pikachu used first ability: Ability{damage=6, isStun=false, isDodge=false, cooldown=4}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur used second ability: Ability{damage=5, isStun=false, isDodge=false, cooldown=3}
+01:53:59 [Vulpix/Pikachu] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Pikachu/Vulpix] DEBUG - myAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:53:59 [Vulpix/Pikachu] DEBUG - Vulpix was attacked.
+01:53:59 [Pikachu/Vulpix] DEBUG - Pikachu was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Pikachu/Vulpix] INFO  - Pokemon Pikachu after an event: Pikachu: hp=17, stunned=false, cd1=5, cd2=0
+01:53:59 [Vulpix/Pikachu] INFO  - Pokemon Vulpix after an event: Vulpix: hp=-2, stunned=false, cd1=0, cd2=3
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=15, stunned=false, cd1=0, cd2=5
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=28, stunned=false, cd1=0, cd2=4
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur used first ability: Ability{damage=6, isStun=false, isDodge=false, cooldown=4}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=28, stunned=false, cd1=5, cd2=3
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=9, stunned=false, cd1=0, cd2=4
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax used first ability: Ability{damage=4, isStun=true, isDodge=false, cooldown=5}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack=null, ability={damage=4, stun=true, dodge=false, cooldown=5}}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack=null, ability={damage=4, stun=true, dodge=false, cooldown=5}}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur was stunned.
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=9, stunned=false, cd1=6, cd2=3
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=24, stunned=true, cd1=4, cd2=2
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur is stunned and cannot do an action
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack=null, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=24, stunned=false, cd1=3, cd2=1
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=9, stunned=false, cd1=5, cd2=2
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur used second ability: Ability{damage=5, isStun=false, isDodge=false, cooldown=3}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=4, stunned=false, cd1=4, cd2=1
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=24, stunned=false, cd1=2, cd2=4
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=4, stunned=false, cd1=3, cd2=0
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=24, stunned=false, cd1=1, cd2=3
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax used second ability: Ability{damage=0, isStun=false, isDodge=true, cooldown=5}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack=null, ability={damage=0, stun=false, dodge=true, cooldown=5}}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack=null, ability={damage=0, stun=false, dodge=true, cooldown=5}}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax dodged.
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=24, stunned=false, cd1=0, cd2=2
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=4, stunned=false, cd1=2, cd2=6
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=24, stunned=false, cd1=0, cd2=1
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=4, stunned=false, cd1=1, cd2=5
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Pokemon Bulbasaur used second ability: Ability{damage=5, isStun=false, isDodge=false, cooldown=3}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Pokemon Snorlax did a simple attack: Attack{normalAttack=3, specialAttack=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - myAction: {attack={normal=3, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}
+01:53:59 [Bulbasaur/Snorlax] DEBUG - myAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}; enemyAction: {attack={normal=3, special=null}, ability=null}
+01:53:59 [Snorlax/Bulbasaur] DEBUG - Snorlax was attacked.
+01:53:59 [Bulbasaur/Snorlax] DEBUG - Bulbasaur was attacked.
+01:53:59 [Snorlax/Bulbasaur] INFO  - Pokemon Snorlax after an event: Snorlax: hp=-1, stunned=false, cd1=0, cd2=4
+01:53:59 [Bulbasaur/Snorlax] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=24, stunned=false, cd1=0, cd2=4
+01:54:00 [T1_vs_T2_1] INFO  - After battle Pikachu: Pikachu: hp=17, stunned=false, cd1=5, cd2=0
+01:54:00 [T1_vs_T2_2] INFO  - After battle Bulbasaur: Bulbasaur: hp=24, stunned=false, cd1=0, cd2=4
+01:54:00 [T1_vs_T2_3] INFO  - After battle Charmander: Charmander: hp=0, stunned=false, cd1=0, cd2=0
+01:54:00 [T1_vs_T2_1] INFO  - After battle Vulpix: Vulpix: hp=-2, stunned=false, cd1=0, cd2=3
+01:54:00 [T1_vs_T2_2] INFO  - After battle Snorlax: Snorlax: hp=-1, stunned=false, cd1=0, cd2=4
+01:54:00 [T1_vs_T2_3] INFO  - After battle Squirtle: Squirtle: hp=37, stunned=false, cd1=3, cd2=0
+01:54:00 [T1_vs_T2_1] INFO  - Winner: Pikachu: hp=17, stunned=false, cd1=5, cd2=0
+01:54:00 [T1_vs_T2_1] DEBUG - Pikachu won a match.
+01:54:00 [T1_vs_T2_2] INFO  - Winner: Bulbasaur: hp=24, stunned=false, cd1=0, cd2=4
+01:54:00 [T1_vs_T2_2] DEBUG - Bulbasaur won a match.
+01:54:00 [T1_vs_T2_3] INFO  - Winner: Squirtle: hp=37, stunned=false, cd1=3, cd2=0
+01:54:00 [T1_vs_T2_1] DEBUG - Vulpix lost a match.
+01:54:00 [T1_vs_T2_2] DEBUG - Snorlax lost a match.
+01:54:00 [T1_vs_T2_3] DEBUG - Squirtle won a match.
+01:54:00 [T1_vs_T2_3] DEBUG - Charmander lost a match.
+01:54:00 [main] INFO  - Starting final battle: Bulbasaur=60; Vulpix=64
+01:54:00 [T1_vs_T2_1] INFO  - Starting battle: Bulbasaur vs Vulpix
+01:54:00 [T1_vs_T2_1] INFO  - Bulbasaur: 45
+01:54:00 [T1_vs_T2_1] INFO  - Vulpix: 40
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur used first ability: Ability{damage=6, isStun=false, isDodge=false, cooldown=4}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=34, stunned=false, cd1=0, cd2=0
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=44, stunned=false, cd1=5, cd2=0
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix used second ability: Ability{damage=2, isStun=false, isDodge=true, cooldown=7}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack=null, ability={damage=2, stun=false, dodge=true, cooldown=7}}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack=null, ability={damage=2, stun=false, dodge=true, cooldown=7}}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix dodged.
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=42, stunned=false, cd1=4, cd2=0
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=34, stunned=false, cd1=0, cd2=8
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=34, stunned=false, cd1=0, cd2=7
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=41, stunned=false, cd1=3, cd2=0
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur used second ability: Ability{damage=5, isStun=false, isDodge=false, cooldown=3}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=40, stunned=false, cd1=2, cd2=4
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=29, stunned=false, cd1=0, cd2=6
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=29, stunned=false, cd1=0, cd2=5
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=39, stunned=false, cd1=1, cd2=3
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=38, stunned=false, cd1=0, cd2=2
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=29, stunned=false, cd1=0, cd2=4
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=37, stunned=false, cd1=0, cd2=1
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=29, stunned=false, cd1=0, cd2=3
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur used second ability: Ability{damage=5, isStun=false, isDodge=false, cooldown=3}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix used first ability: Ability{damage=8, isStun=true, isDodge=false, cooldown=6}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack=null, ability={damage=8, stun=true, dodge=false, cooldown=6}}; enemyAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}; enemyAction: {attack=null, ability={damage=8, stun=true, dodge=false, cooldown=6}}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur was stunned.
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=24, stunned=false, cd1=7, cd2=2
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=29, stunned=true, cd1=0, cd2=4
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur is stunned and cannot do an action
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack=null, ability=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=28, stunned=false, cd1=0, cd2=3
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=24, stunned=false, cd1=6, cd2=1
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix used second ability: Ability{damage=2, isStun=false, isDodge=true, cooldown=7}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack=null, ability={damage=2, stun=false, dodge=true, cooldown=7}}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix dodged.
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack=null, ability={damage=2, stun=false, dodge=true, cooldown=7}}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=24, stunned=false, cd1=5, cd2=8
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=26, stunned=false, cd1=0, cd2=2
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur used first ability: Ability{damage=6, isStun=false, isDodge=false, cooldown=4}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=25, stunned=false, cd1=5, cd2=1
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=18, stunned=false, cd1=4, cd2=7
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=24, stunned=false, cd1=4, cd2=0
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=18, stunned=false, cd1=3, cd2=6
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=23, stunned=false, cd1=3, cd2=0
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur used second ability: Ability{damage=5, isStun=false, isDodge=false, cooldown=3}
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=18, stunned=false, cd1=2, cd2=5
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=13, stunned=false, cd1=1, cd2=4
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=22, stunned=false, cd1=2, cd2=4
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=13, stunned=false, cd1=0, cd2=3
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=21, stunned=false, cd1=1, cd2=3
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix used first ability: Ability{damage=8, isStun=true, isDodge=false, cooldown=6}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack=null, ability={damage=8, stun=true, dodge=false, cooldown=6}}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack=null, ability={damage=8, stun=true, dodge=false, cooldown=6}}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur was stunned.
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=13, stunned=true, cd1=0, cd2=2
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur is stunned and cannot do an action
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=13, stunned=false, cd1=7, cd2=2
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack=null, ability=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack=null, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=13, stunned=false, cd1=6, cd2=1
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=12, stunned=false, cd1=0, cd2=1
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=11, stunned=false, cd1=0, cd2=0
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=13, stunned=false, cd1=5, cd2=0
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur used second ability: Ability{damage=5, isStun=false, isDodge=false, cooldown=3}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=8, stunned=false, cd1=4, cd2=0
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=10, stunned=false, cd1=0, cd2=4
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=9, stunned=false, cd1=0, cd2=3
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=8, stunned=false, cd1=3, cd2=0
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix used second ability: Ability{damage=2, isStun=false, isDodge=true, cooldown=7}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack=null, ability={damage=2, stun=false, dodge=true, cooldown=7}}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack=null, ability={damage=2, stun=false, dodge=true, cooldown=7}}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix dodged.
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=8, stunned=false, cd1=2, cd2=8
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=7, stunned=false, cd1=0, cd2=2
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=6, stunned=false, cd1=0, cd2=1
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur did a simple attack: Attack{normalAttack=null, specialAttack=5}
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=8, stunned=false, cd1=1, cd2=7
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack={normal=null, special=5}, ability=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack={normal=null, special=5}, ability=null}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=5, stunned=false, cd1=0, cd2=0
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=8, stunned=false, cd1=0, cd2=6
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur used first ability: Ability{damage=6, isStun=false, isDodge=false, cooldown=4}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack=null, ability={damage=6, stun=false, dodge=false, cooldown=4}}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=4, stunned=false, cd1=5, cd2=0
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=2, stunned=false, cd1=0, cd2=5
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Pokemon Bulbasaur used second ability: Ability{damage=5, isStun=false, isDodge=false, cooldown=3}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Pokemon Vulpix did a simple attack: Attack{normalAttack=5, specialAttack=null}
+01:54:00 [Vulpix/Bulbasaur] DEBUG - myAction: {attack={normal=5, special=null}, ability=null}; enemyAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - myAction: {attack=null, ability={damage=5, stun=false, dodge=false, cooldown=3}}; enemyAction: {attack={normal=5, special=null}, ability=null}
+01:54:00 [Bulbasaur/Vulpix] DEBUG - Bulbasaur was attacked.
+01:54:00 [Vulpix/Bulbasaur] DEBUG - Vulpix was attacked.
+01:54:00 [Bulbasaur/Vulpix] INFO  - Pokemon Bulbasaur after an event: Bulbasaur: hp=3, stunned=false, cd1=4, cd2=4
+01:54:00 [Vulpix/Bulbasaur] INFO  - Pokemon Vulpix after an event: Vulpix: hp=-3, stunned=false, cd1=0, cd2=4

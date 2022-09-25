@@ -1,9 +1,7 @@
 package com.oop.project.ioc;
 
 import com.oop.project.ioc.annotations.Bean;
-import com.oop.project.ioc.initialization.BeanInitializer;
-import com.oop.project.ioc.initialization.BeanPostProcessor;
-import com.oop.project.ioc.initialization.DefaultBeanInitializer;
+import com.oop.project.ioc.initialization.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.reflections.Reflections;
@@ -28,7 +26,9 @@ public class ContainerContext {
 
     private final BeanInitializer beanInitializer = new DefaultBeanInitializer();
 
-    public ContainerContext() {
+    private final ComponentsScanner componentsScanner = new ConfigurationFirstComponentScanner(new DependentComponentScanner());
+
+    private ContainerContext() {
     }
 
     public static ContainerContext getInstance() {
@@ -59,8 +59,9 @@ public class ContainerContext {
         Set<Class<?>> classes = new HashSet<>();
 
         for (String prefix : this.componentsToScan) {
-            classes.addAll(scanPrefix(prefix));
+            classes.addAll(componentsScanner.scanPrefixes(prefix));
         }
+
         return classes;
     }
 
@@ -86,19 +87,6 @@ public class ContainerContext {
         }
 
         return newBeans;
-    }
-
-    private Set<Class<?>> scanPrefix(String prefix) {
-        Reflections reflections = new Reflections(prefix, new SubTypesScanner(false));
-
-        return new HashSet<>(reflections.getSubTypesOf(Object.class)).stream().filter(aClass -> {
-            Bean annotation = aClass.getAnnotation(Bean.class);
-
-            if (annotation != null) { // filter not beans
-                return !annotation.lazy() && !annotation.prototype(); // filter lazy beans and prototype
-            }
-            return false;
-        }).collect(Collectors.toSet());
     }
 
     @SuppressWarnings("unchecked")

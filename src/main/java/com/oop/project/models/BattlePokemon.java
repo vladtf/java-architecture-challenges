@@ -1,5 +1,6 @@
 package com.oop.project.models;
 
+import com.oop.project.ioc.annotations.Autowired;
 import com.oop.project.ioc.annotations.Bean;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -23,6 +24,7 @@ public class BattlePokemon implements Comparable<BattlePokemon> {
 
     private boolean isStuned = false;
 
+    @Autowired
     public BattlePokemon(Pokemon pokemon, Set<Item> items) {
         this.pokemon = pokemon;
         this.items = items;

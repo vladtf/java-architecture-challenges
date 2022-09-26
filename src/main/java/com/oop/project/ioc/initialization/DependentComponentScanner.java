@@ -54,7 +54,8 @@ public class DependentComponentScanner implements ComponentsScanner {
     }
 
     public Set<Class<?>> scanClass(Class<?> clazz) {
-        if (instantiationStack.contains(clazz) || !clazz.isAnnotationPresent(Bean.class)) {
+        // TODO checking if is prototype/lazy bean don't seems to be ok (violation of SRP)
+        if (instantiationStack.contains(clazz) || !isBeanAnnotated(clazz) || isPrototypeOrLazyBean(clazz)) {
             return Collections.emptySet();
         }
 
@@ -74,6 +75,10 @@ public class DependentComponentScanner implements ComponentsScanner {
         log.debug("Finished scanning class: {}", clazz.getName());
 
         return result;
+    }
+
+    private static boolean isPrototypeOrLazyBean(Class<?> clazz) {
+        return clazz.getAnnotation(Bean.class).lazy() || clazz.getAnnotation(Bean.class).prototype();
     }
 
     private Constructor<?> getConstructor(Class<?> clazz) throws RuntimeException {

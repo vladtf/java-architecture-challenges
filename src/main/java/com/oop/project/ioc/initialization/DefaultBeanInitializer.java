@@ -20,15 +20,7 @@ public class DefaultBeanInitializer implements BeanInitializer {
             throw new IllegalStateException("Bean is already instantiating. This means that there might be a circular dependency, instantiation stack: " + instantiationStack);
         }
 
-        if (clazz.isAnnotation()) {
-            return Optional.empty();
-        }
-
         instantiationStack.add(clazz);
-
-        if (!clazz.isAnnotationPresent(Bean.class)) {
-            throw new IllegalArgumentException(clazz.getName() + " is not a Bean annotated class and cannot be instantiated.");
-        }
 
         try {
 
@@ -55,8 +47,7 @@ public class DefaultBeanInitializer implements BeanInitializer {
             return clazz.getConstructor();
         }
 
-        List<? extends Class<?>> argsType = Arrays.stream(args).map(Object::getClass)
-                .collect(Collectors.toList());
+        List<? extends Class<?>> argsType = Arrays.stream(args).map(Object::getClass).toList();
 
         for (Constructor<?> constructor : clazz.getDeclaredConstructors()) {
             Class<?>[] parameterTypes = constructor.getParameterTypes();

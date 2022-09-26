@@ -21,7 +21,7 @@ public class ProxyBattlePokemon {
     }
 
     public static BattlePokemon preparePokemonWithLog(Pokemon pokemon, Set<Item> items) {
-        BattlePokemon battlePokemon = ContainerContext.getBean(BattlePokemon.class, pokemon, items);
+        BattlePokemon battlePokemon = ContainerContext.getInstance().getBeanNonStatic(BattlePokemon.class, pokemon, items);
 
         Callback handler = (InvocationHandler) (o, method, args) -> {
             if ("attackMe".equals(method.getName())) {

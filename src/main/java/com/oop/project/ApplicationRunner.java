@@ -24,8 +24,8 @@ public class ApplicationRunner {
 
     private final PokemonService pokemonService;
 
-    public ApplicationRunner() {
-        this.pokemonService = ApplicationContext.getBeanStatic(PokemonService.class);
+    public ApplicationRunner(PokemonService pokemonService) {
+        this.pokemonService = pokemonService;
     }
 
     public void run() throws Exception {

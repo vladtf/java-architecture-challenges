@@ -9,7 +9,6 @@ import org.apache.logging.log4j.Logger;
 public class PokemonThread extends Thread {
     private static final Logger LOGGER = LogManager.getLogger(PokemonThread.class);
 
-
     private final BattlePokemon pokemon;
     private final BattlePokemon pokemon2;
     private final ActionWrapper myActionWrapper;

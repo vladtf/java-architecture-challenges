@@ -16,8 +16,8 @@ public class ApplicationRunnerTest {
     public static void prepareTest() {
         ApplicationContext.getContext().initContext();
 
-        trainerService = ApplicationContext.getBean(TrainerService.class);
-        runner = ApplicationContext.getBean(ApplicationRunner.class);
+        trainerService = ApplicationContext.getBeanStatic(TrainerService.class);
+        runner = ApplicationContext.getBeanStatic(ApplicationRunner.class);
     }
 
     @Test

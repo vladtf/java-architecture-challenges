@@ -1,6 +1,5 @@
 package com.oop.project.ioc.processors;
 
-import com.oop.project.ioc.ApplicationContext;
 import com.oop.project.ioc.annotations.Configuration;
 import com.oop.project.ioc.annotations.Logged;
 import com.oop.project.ioc.initialization.BeanPostProcessor;
@@ -20,7 +19,7 @@ public class LoggingBeanPostProcessor implements BeanPostProcessor {
 
     @Override
     @SuppressWarnings("unchecked")
-    public <T> T processBeanAfterInitialization(T bean, ApplicationContext ctx) {
+    public <T> T processBeanAfterInitialization(T bean) {
         if (bean.getClass().isAnnotationPresent(Logged.class)) {
             return (T) Enhancer.create(bean.getClass(), new MethodInterceptor() {
                 @Override

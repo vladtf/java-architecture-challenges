@@ -11,7 +11,6 @@ public class ApplicationContext {
     private static final Object mutex = new Object();
     private volatile static ApplicationContext instance;
     private final Logger LOGGER = LogManager.getLogger(ApplicationContext.class);
-    private final Map<Class<?>, Object> dependencies = new HashMap<>();
 
     private final Set<String> componentsToScan = new HashSet<>();
 
@@ -49,8 +48,7 @@ public class ApplicationContext {
         Set<Class<?>> classes = scanAllPrefixes(componentsToScan, initializationRules);
 
         Set<Object> objects = initClasses(classes);
-
-        applyBeanPostProcessors(objects);
+        beanInitializer.applyBeanPostProcessors(objects, beanPostProcessors);
 
         return instance;
     }
@@ -75,21 +73,14 @@ public class ApplicationContext {
         return classes;
     }
 
-    private void applyBeanPostProcessors(Set<Object> beans) {
-        for (BeanPostProcessor beanPostProcessor : beanPostProcessors) {
-            for (Object bean : beans) {
-                Object processedBean = beanPostProcessor.processBeanAfterInitialization(bean, instance);
-                dependencies.put(bean.getClass(), processedBean);
-            }
-        }
-    }
 
     private Set<Object> initClasses(Set<Class<?>> classes) {
         Set<Object> newBeans = new HashSet<>();
 
         for (Class<?> clazz : classes) {
             try {
-                beanInitializer.initBean(clazz, null).ifPresent(newBeans::add);
+                Optional<?> bean = beanInitializer.getBean(clazz, null);
+                bean.ifPresent(newBeans::add);
             } catch (Exception e) {
                 LOGGER.info("Failed to instantiate bean: {}", clazz.getName(), e);
             }
@@ -98,22 +89,13 @@ public class ApplicationContext {
         return newBeans;
     }
 
-    @SuppressWarnings("unchecked")
     public <T> T getBean(Class<T> clazz, Object... args) {
-        if (!dependencies.containsKey(clazz)) { // don't use compute if absent because initBean already put new bean if necessary
-            return Objects.requireNonNull(beanInitializer.initBean(clazz, args)).orElse(null);
-        }
-        return (T) dependencies.get(clazz);
+        return Objects.requireNonNull(beanInitializer.getBean(clazz, args).orElse(null));
     }
 
-    @SuppressWarnings("unchecked")
     public static <T> T getBeanStatic(Class<T> clazz, Object... args) {
-        if (!instance.dependencies.containsKey(clazz)) { // don't use compute if absent because initBean already put new bean if necessary
-            return Objects.requireNonNull(instance.beanInitializer.initBean(clazz, args)).orElse(null);
-        }
-        return (T) instance.dependencies.get(clazz);
+        return Objects.requireNonNull(instance.beanInitializer.getBean(clazz, args).orElse(null));
     }
-
 
     public ApplicationContext withComponentsToScan(String... components) {
         getContext().componentsToScan.addAll(Arrays.asList(components));

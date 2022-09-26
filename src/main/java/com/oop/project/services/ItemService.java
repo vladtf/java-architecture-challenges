@@ -1,6 +1,6 @@
 package com.oop.project.services;
 
-import com.oop.project.ioc.ContainerContext;
+import com.oop.project.ioc.ApplicationContext;
 import com.oop.project.ioc.annotations.Bean;
 import com.oop.project.ioc.annotations.Logged;
 import com.oop.project.models.Item;
@@ -18,7 +18,7 @@ public class ItemService extends ServiceBase<Item> {
     private static final String INPUT_FILE_PATH = "items.json";
 
     public ItemService() {
-        super(ContainerContext.getBean(ItemRepository.class));
+        super(ApplicationContext.getBeanStatic(ItemRepository.class));
     }
 
     @Override

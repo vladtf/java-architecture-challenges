@@ -1,6 +1,6 @@
 package com.oop.project.services;
 
-import com.oop.project.ioc.ContainerContext;
+import com.oop.project.ioc.ApplicationContext;
 import com.oop.project.ioc.annotations.Bean;
 import com.oop.project.ioc.annotations.Logged;
 import com.oop.project.models.BattlePokemon;
@@ -15,7 +15,7 @@ public class PokemonService extends ServiceBase<Pokemon> {
     private static final String INPUT_FILE_PATH = "pokemons.json";
 
     public PokemonService() {
-        super(ContainerContext.getBean(PokemonRepository.class));
+        super(ApplicationContext.getBeanStatic(PokemonRepository.class));
     }
 
     @Override

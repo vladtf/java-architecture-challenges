@@ -1,6 +1,6 @@
 package com.oop.project;
 
-import com.oop.project.ioc.ContainerContext;
+import com.oop.project.ioc.ApplicationContext;
 import com.oop.project.ioc.processors.LoggingBeanPostProcessor;
 import com.oop.project.threads.PokemonThread;
 import org.apache.logging.log4j.LogManager;
@@ -12,12 +12,12 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            ContainerContext ctx = ContainerContext.getInstance()
+            ApplicationContext ctx = ApplicationContext.getContext()
                     .withComponentsToScan("com.oop.project")
                     .withBeanPostProcessors(new LoggingBeanPostProcessor())
-                    .initContainer();
+                    .initContext();
 
-            ApplicationRunner applicationRunner = ContainerContext.getBean(ApplicationRunner.class);
+            ApplicationRunner applicationRunner = ctx.getBean(ApplicationRunner.class);
 
             applicationRunner.run();
         } catch (Exception e) {

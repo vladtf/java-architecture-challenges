@@ -1,6 +1,6 @@
 package com.oop.project.services;
 
-import com.oop.project.ioc.ContainerContext;
+import com.oop.project.ioc.ApplicationContext;
 import com.oop.project.ioc.annotations.Bean;
 import com.oop.project.ioc.annotations.Logged;
 import com.oop.project.models.BattlePokemon;
@@ -22,9 +22,9 @@ public class TrainerService extends ServiceBase<Trainer> {
     private final String inputFilePath = "trainers.json";
 
     public TrainerService() {
-        super(ContainerContext.getBean(TrainerRepository.class));
-        this.itemService = ContainerContext.getBean(ItemService.class);
-        this.pokemonService = ContainerContext.getBean(PokemonService.class);
+        super(ApplicationContext.getBeanStatic(TrainerRepository.class));
+        this.itemService = ApplicationContext.getBeanStatic(ItemService.class);
+        this.pokemonService = ApplicationContext.getBeanStatic(PokemonService.class);
         updateItems(inputFilePath);
     }
 

@@ -1,6 +1,6 @@
 package com.oop.project;
 
-import com.oop.project.ioc.ContainerContext;
+import com.oop.project.ioc.ApplicationContext;
 import com.oop.project.services.TrainerService;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -14,10 +14,10 @@ public class ApplicationRunnerTest {
 
     @BeforeClass
     public static void prepareTest() {
-        ContainerContext.getInstance().initContainer();
+        ApplicationContext.getContext().initContext();
 
-        trainerService = ContainerContext.getBean(TrainerService.class);
-        runner = ContainerContext.getBean(ApplicationRunner.class);
+        trainerService = ApplicationContext.getBean(TrainerService.class);
+        runner = ApplicationContext.getBean(ApplicationRunner.class);
     }
 
     @Test

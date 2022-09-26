@@ -1,6 +1,6 @@
 package com.oop.project.proxy;
 
-import com.oop.project.ioc.ContainerContext;
+import com.oop.project.ioc.ApplicationContext;
 import com.oop.project.models.BattlePokemon;
 import com.oop.project.models.Item;
 import com.oop.project.models.Pokemon;
@@ -21,7 +21,7 @@ public class ProxyBattlePokemon {
     }
 
     public static BattlePokemon preparePokemonWithLog(Pokemon pokemon, Set<Item> items) {
-        BattlePokemon battlePokemon = ContainerContext.getInstance().getBeanNonStatic(BattlePokemon.class, pokemon, items);
+        BattlePokemon battlePokemon = ApplicationContext.getContext().getBean(BattlePokemon.class, pokemon, items);
 
         Callback handler = (InvocationHandler) (o, method, args) -> {
             if ("attackMe".equals(method.getName())) {

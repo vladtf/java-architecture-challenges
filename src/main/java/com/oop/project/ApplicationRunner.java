@@ -1,6 +1,6 @@
 package com.oop.project;
 
-import com.oop.project.ioc.ContainerContext;
+import com.oop.project.ioc.ApplicationContext;
 import com.oop.project.ioc.annotations.Bean;
 import com.oop.project.models.BattlePokemon;
 import com.oop.project.models.Event;
@@ -25,14 +25,14 @@ public class ApplicationRunner {
     private final PokemonService pokemonService;
 
     public ApplicationRunner() {
-        this.pokemonService = ContainerContext.getBean(PokemonService.class);
+        this.pokemonService = ApplicationContext.getBeanStatic(PokemonService.class);
     }
 
     public void run() throws Exception {
         LOGGER.info("Start application.");
 
-        Trainer trainer1 = ContainerContext.getBean(TrainerService.class).getPreparedTrainer("Trainer1");
-        Trainer trainer2 = ContainerContext.getBean(TrainerService.class).getPreparedTrainer("Trainer2");
+        Trainer trainer1 = ApplicationContext.getBeanStatic(TrainerService.class).getPreparedTrainer("Trainer1");
+        Trainer trainer2 = ApplicationContext.getBeanStatic(TrainerService.class).getPreparedTrainer("Trainer2");
 
         LOGGER.info("Trainer1: {}", trainer1);
         LOGGER.info("Trainer2: {}", trainer2);

@@ -7,10 +7,10 @@ import org.apache.logging.log4j.Logger;
 import java.util.*;
 
 @SuppressWarnings("unchecked")
-public class ContainerContext {
+public class ApplicationContext {
     private static final Object mutex = new Object();
-    private volatile static ContainerContext instance;
-    private final Logger LOGGER = LogManager.getLogger(ContainerContext.class);
+    private volatile static ApplicationContext instance;
+    private final Logger LOGGER = LogManager.getLogger(ApplicationContext.class);
     private final Map<Class<?>, Object> dependencies = new HashMap<>();
 
     private final Set<String> componentsToScan = new HashSet<>();
@@ -23,7 +23,7 @@ public class ContainerContext {
 
     private final Set<InitializationRule> initializationRules;
 
-    private ContainerContext() {
+    private ApplicationContext() {
         initializationRules = new InitializationRulesBuilder()
                 .withInitRule(new SkipLazyBeanInitializationRule())
                 .withInitRule(new SkipPrototypeBeanInitializationRule())
@@ -31,13 +31,13 @@ public class ContainerContext {
                 .build();
     }
 
-    public static ContainerContext getInstance() {
-        ContainerContext result = instance;
+    public static ApplicationContext getContext() {
+        ApplicationContext result = instance;
         if (result == null) {
             synchronized (mutex) {
                 result = instance;
                 if (result == null) {
-                    result = instance = new ContainerContext();
+                    result = instance = new ApplicationContext();
                 }
             }
         }
@@ -45,15 +45,7 @@ public class ContainerContext {
         return result;
     }
 
-    @SuppressWarnings("unchecked")
-    public static <T> T getBean(Class<T> clazz, Object... args) {
-        if (!getInstance().dependencies.containsKey(clazz)) { // don't use compute if absent because initBean already put new bean if necessary
-            return Objects.requireNonNull(getInstance().beanInitializer.initBean(clazz, args)).orElse(null);
-        }
-        return (T) getInstance().dependencies.get(clazz);
-    }
-
-    public ContainerContext initContainer() {
+    public ApplicationContext initContext() {
         Set<Class<?>> classes = scanAllPrefixes(componentsToScan, initializationRules);
 
         Set<Object> objects = initClasses(classes);
@@ -107,20 +99,28 @@ public class ContainerContext {
     }
 
     @SuppressWarnings("unchecked")
-    public <T> T getBeanNonStatic(Class<T> clazz, Object... args) {
+    public <T> T getBean(Class<T> clazz, Object... args) {
         if (!dependencies.containsKey(clazz)) { // don't use compute if absent because initBean already put new bean if necessary
             return Objects.requireNonNull(beanInitializer.initBean(clazz, args)).orElse(null);
         }
         return (T) dependencies.get(clazz);
     }
 
-
-    public ContainerContext withComponentsToScan(String... components) {
-        getInstance().componentsToScan.addAll(Arrays.asList(components));
-        return getInstance();
+    @SuppressWarnings("unchecked")
+    public static <T> T getBeanStatic(Class<T> clazz, Object... args) {
+        if (!instance.dependencies.containsKey(clazz)) { // don't use compute if absent because initBean already put new bean if necessary
+            return Objects.requireNonNull(instance.beanInitializer.initBean(clazz, args)).orElse(null);
+        }
+        return (T) instance.dependencies.get(clazz);
     }
 
-    public ContainerContext withBeanPostProcessors(BeanPostProcessor... beanPostProcessors) {
+
+    public ApplicationContext withComponentsToScan(String... components) {
+        getContext().componentsToScan.addAll(Arrays.asList(components));
+        return getContext();
+    }
+
+    public ApplicationContext withBeanPostProcessors(BeanPostProcessor... beanPostProcessors) {
         this.beanPostProcessors.addAll(Arrays.asList(beanPostProcessors));
         return instance;
     }

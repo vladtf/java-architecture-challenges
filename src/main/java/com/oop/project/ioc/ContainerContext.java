@@ -8,11 +8,9 @@ import java.util.*;
 
 @SuppressWarnings("unchecked")
 public class ContainerContext {
-    private final Logger LOGGER = LogManager.getLogger(ContainerContext.class);
-
-    private volatile static ContainerContext instance;
     private static final Object mutex = new Object();
-
+    private volatile static ContainerContext instance;
+    private final Logger LOGGER = LogManager.getLogger(ContainerContext.class);
     private final Map<Class<?>, Object> dependencies = new HashMap<>();
 
     private final Set<String> componentsToScan = new HashSet<>();
@@ -47,6 +45,13 @@ public class ContainerContext {
         return result;
     }
 
+    @SuppressWarnings("unchecked")
+    public static <T> T getBean(Class<T> clazz, Object... args) {
+        if (!getInstance().dependencies.containsKey(clazz)) { // don't use compute if absent because initBean already put new bean if necessary
+            return Objects.requireNonNull(getInstance().beanInitializer.initBean(clazz, args)).orElse(null);
+        }
+        return (T) getInstance().dependencies.get(clazz);
+    }
 
     public ContainerContext initContainer() {
         Set<Class<?>> classes = scanAllPrefixes(componentsToScan, initializationRules);
@@ -57,7 +62,6 @@ public class ContainerContext {
 
         return instance;
     }
-
 
     private Set<Class<?>> scanAllPrefixes(Set<String> componentsToScan, Set<InitializationRule> initializationRules) {
         Set<Class<?>> classes = new HashSet<>();
@@ -88,7 +92,6 @@ public class ContainerContext {
         }
     }
 
-
     private Set<Object> initClasses(Set<Class<?>> classes) {
         Set<Object> newBeans = new HashSet<>();
 
@@ -101,14 +104,6 @@ public class ContainerContext {
         }
 
         return newBeans;
-    }
-
-    @SuppressWarnings("unchecked")
-    public static <T> T getBean(Class<T> clazz, Object... args) {
-        if (!getInstance().dependencies.containsKey(clazz)) { // don't use compute if absent because initBean already put new bean if necessary
-            return Objects.requireNonNull(getInstance().beanInitializer.initBean(clazz, args)).orElse(null);
-        }
-        return (T) getInstance().dependencies.get(clazz);
     }
 
     @SuppressWarnings("unchecked")

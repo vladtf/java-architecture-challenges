@@ -16,6 +16,9 @@ public class DependentComponentScanner implements ComponentsScanner {
 
     private final Set<Class<?>> instantiationStack = new HashSet<>();
 
+    private static boolean isPrototypeOrLazyBean(Class<?> clazz) {
+        return clazz.getAnnotation(Bean.class).lazy() || clazz.getAnnotation(Bean.class).prototype();
+    }
 
     @Override
     public <T> T nextElement() {
@@ -75,10 +78,6 @@ public class DependentComponentScanner implements ComponentsScanner {
         log.debug("Finished scanning class: {}", clazz.getName());
 
         return result;
-    }
-
-    private static boolean isPrototypeOrLazyBean(Class<?> clazz) {
-        return clazz.getAnnotation(Bean.class).lazy() || clazz.getAnnotation(Bean.class).prototype();
     }
 
     private Constructor<?> getConstructor(Class<?> clazz) throws RuntimeException {

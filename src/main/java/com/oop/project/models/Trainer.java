@@ -8,20 +8,15 @@ import java.util.TreeSet;
 
 public class Trainer implements Model {
 
-    private String name;
-
-    private int age;
-
     Set<String> pokemonsName;
-
     @JsonIgnore
     Set<Pokemon> pokemons;
-
     @JsonIgnore
     Set<BattlePokemon> battlePokemons = new TreeSet<>();
-
     @JsonIgnore
     Set<Item> items;
+    private String name;
+    private int age;
 
     private Trainer(String name, int age) {
         this.name = name;
@@ -62,13 +57,13 @@ public class Trainer implements Model {
         return pokemons;
     }
 
-    public BattlePokemon getPokemon(int index) {
-        return (BattlePokemon) battlePokemons.toArray()[index];
-    }
-
     public Trainer setPokemons(Set<Pokemon> pokemons) {
         this.pokemons = pokemons;
         return this;
+    }
+
+    public BattlePokemon getPokemon(int index) {
+        return (BattlePokemon) battlePokemons.toArray()[index];
     }
 
     public void preparePokemonsToBattle(Set<Item> items) {

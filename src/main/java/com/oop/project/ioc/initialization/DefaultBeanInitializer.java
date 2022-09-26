@@ -1,13 +1,11 @@
 package com.oop.project.ioc.initialization;
 
-import com.oop.project.ioc.ContainerContext;
 import com.oop.project.ioc.annotations.Bean;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.lang.reflect.Constructor;
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class DefaultBeanInitializer implements BeanInitializer {
     private final Logger LOGGER = LogManager.getLogger(DefaultBeanInitializer.class);

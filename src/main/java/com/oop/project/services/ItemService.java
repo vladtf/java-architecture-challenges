@@ -1,7 +1,7 @@
 package com.oop.project.services;
 
-import com.oop.project.ioc.annotations.Bean;
 import com.oop.project.ioc.ContainerContext;
+import com.oop.project.ioc.annotations.Bean;
 import com.oop.project.ioc.annotations.Logged;
 import com.oop.project.models.Item;
 import com.oop.project.repositories.ItemRepository;

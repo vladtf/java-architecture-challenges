@@ -1,7 +1,6 @@
 package com.oop.project.repositories;
 
 import com.oop.project.ioc.annotations.Bean;
-import com.oop.project.ioc.annotations.Logged;
 import com.oop.project.models.Item;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

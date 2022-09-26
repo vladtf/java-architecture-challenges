@@ -1,13 +1,10 @@
 package com.oop.project.ioc.processors;
 
-import com.oop.project.ioc.annotations.Configuration;
 import com.oop.project.ioc.ContainerContext;
+import com.oop.project.ioc.annotations.Configuration;
 import com.oop.project.ioc.annotations.Logged;
 import com.oop.project.ioc.initialization.BeanPostProcessor;
-import lombok.extern.log4j.Log4j;
 import lombok.extern.log4j.Log4j2;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.springframework.cglib.proxy.Enhancer;
 import org.springframework.cglib.proxy.MethodInterceptor;
 import org.springframework.cglib.proxy.MethodProxy;

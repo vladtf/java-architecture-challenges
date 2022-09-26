@@ -1,7 +1,7 @@
 package com.oop.project;
 
-import com.oop.project.ioc.annotations.Bean;
 import com.oop.project.ioc.ContainerContext;
+import com.oop.project.ioc.annotations.Bean;
 import com.oop.project.models.BattlePokemon;
 import com.oop.project.models.Event;
 import com.oop.project.models.Trainer;

@@ -10,9 +10,8 @@ import java.util.List;
 
 public abstract class ServiceBase<T extends Model> {
     private static final Logger LOGGER = LogManager.getLogger(PokemonThread.class);
-
-    protected List<T> items;
     private final FileRepository<T> fileRepository;
+    protected List<T> items;
 
     public ServiceBase(FileRepository<T> fileRepository) {
         this.fileRepository = fileRepository;

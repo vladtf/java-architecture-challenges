@@ -1,7 +1,5 @@
 package com.oop.project.ioc.initialization;
 
-import com.oop.project.ioc.annotations.Bean;
-
 import java.util.Set;
 import java.util.stream.Collectors;
 

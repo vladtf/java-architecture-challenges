@@ -2,6 +2,7 @@ package com.oop.project.ioc.initialization;
 
 import com.oop.project.ioc.annotations.Autowired;
 import com.oop.project.ioc.annotations.Bean;
+import lombok.SneakyThrows;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,7 +12,7 @@ import java.util.*;
 public class DefaultBeanInitializer implements BeanInitializer {
     private final Logger LOGGER = LogManager.getLogger(DefaultBeanInitializer.class);
 
-    private final Map<Class<?>, Object> dependencies = new HashMap<>();
+    private final Map<Class<?>, Object> registeredBeans = new HashMap<>();
 
     private final Set<Class<?>> instantiationStack = new HashSet<>();
 
@@ -26,21 +27,19 @@ public class DefaultBeanInitializer implements BeanInitializer {
 
             T instance;
 
+            // TODO this must be replaced with a factory because there be more categories of beans that has different types of instantiation
+            //  and you mustn't include in init bean logic that will figure out what kind of installation is required
             if (isPrototype(clazz)) {
                 instance = initPrototype(clazz, args);
             } else {
                 instance = initSingleton(clazz);
-            }
-
-            Bean annotation = clazz.getAnnotation(Bean.class);
-            if (!annotation.prototype()) { // don't store prototype beans
-                instance = putDependency(clazz, instance).orElse(null);
+                registeredBeans.put(clazz, instance); // don't store prototype beans
             }
 
             LOGGER.info("Registered new bean: {}", clazz.getName());
 
             instantiationStack.remove(clazz);
-            return Optional.ofNullable(instance);
+            return Optional.of(instance);
         } catch (Exception e) {
             LOGGER.info("Failed to instantiate bean: {}", clazz.getName(), e);
         }
@@ -48,17 +47,37 @@ public class DefaultBeanInitializer implements BeanInitializer {
         return Optional.empty();
     }
 
+    @SneakyThrows
     private <T> T initSingleton(Class<T> clazz) {
-        return null;
+        Constructor<T> constructor = getSingletonConstructor(clazz);
+        checkConstructorIsFullyAutowired(constructor);
+
+        List<Object> args = new ArrayList<>();
+        for (Class<?> parameterType : constructor.getParameterTypes()) {
+            Optional<?> param = getBean(parameterType);
+            args.add(Objects.requireNonNull(param.orElse(null)));
+        }
+
+        return constructor.newInstance(args.toArray());
     }
 
+    private <T> void checkConstructorIsFullyAutowired(Constructor<T> constructor) {
+        for (Class<?> parameterType : constructor.getParameterTypes()) {
+            if (!parameterType.isAnnotationPresent(Bean.class)) {
+                throw new RuntimeException("Constructor for clazz " + constructor.getName() + " have parameters that can't be injected because are not beans.");
+            }
+        }
+    }
+
+    @SneakyThrows
     private <T> T initPrototype(Class<T> clazz, Object[] args) {
-        return null;
+        return getPrototypeConstructor(clazz, args).newInstance(args);
     }
 
-    private <T> Constructor<T> getConstructor(Class<T> clazz, Object... args) throws NoSuchMethodException {
+    @SneakyThrows
+    private <T> Constructor<T> getPrototypeConstructor(Class<T> clazz, Object... args) {
         if (args == null || args.length == 0 || !isPrototype(clazz)) {
-            return getConstructorWithNoRequiredArgs(clazz);
+            return getSingletonConstructor(clazz);
         }
 
         List<? extends Class<?>> argsType = Arrays.stream(args).map(Object::getClass).toList();
@@ -70,6 +89,7 @@ public class DefaultBeanInitializer implements BeanInitializer {
                 continue;
             }
 
+            // TODO must be sorted checking to avoid bug when there are 2 parameters of same type but it was provided only once
             boolean isRightConstructor = false;
             for (Class<?> parameterType : parameterTypes) {
                 if (!argsType.contains(parameterType)) {
@@ -77,6 +97,7 @@ public class DefaultBeanInitializer implements BeanInitializer {
                     break;
                 }
             }
+
             if (isRightConstructor) {
                 return (Constructor<T>) constructor;
             }
@@ -89,8 +110,9 @@ public class DefaultBeanInitializer implements BeanInitializer {
         return clazz.getAnnotation(Bean.class).prototype();
     }
 
+    @SneakyThrows
     @SuppressWarnings("unchecked")
-    private <T> Constructor<T> getConstructorWithNoRequiredArgs(Class<T> clazz) {
+    private <T> Constructor<T> getSingletonConstructor(Class<T> clazz) {
         Constructor<T>[] declaredConstructors = (Constructor<T>[]) clazz.getDeclaredConstructors();
 
         if (declaredConstructors.length == 1) {
@@ -102,12 +124,13 @@ public class DefaultBeanInitializer implements BeanInitializer {
                 .toList();
 
         if (autowiredConstructors.size() == 0) {
-            throw new RuntimeException("Multiple constructors, but no @Autowired constructor for class [" + clazz + "]");
+            throw new NoSuchMethodException("Multiple constructors, but no @Autowired constructor for class [" + clazz + "]");
         }
 
         if (autowiredConstructors.size() > 1) {
-            throw new RuntimeException("There are multiple constructors annotated with @Autowired for class [" + clazz + "]");
+            throw new NoSuchMethodException("There are multiple constructors annotated with @Autowired for class [" + clazz + "]");
         }
+
 
         return autowiredConstructors.get(0);
     }
@@ -123,10 +146,10 @@ public class DefaultBeanInitializer implements BeanInitializer {
     @Override
     @SuppressWarnings("unchecked")
     public <T> Optional<T> getBean(Class<T> clazz, Object... args) {
-        if (!dependencies.containsKey(clazz)) { // don't use compute if absent because initBean already put new bean if necessary
+        if (!registeredBeans.containsKey(clazz)) { // don't use compute if absent because initBean already put new bean if necessary
             return initBean(clazz, args);
         }
-        return Optional.ofNullable((T) dependencies.get(clazz));
+        return Optional.ofNullable((T) registeredBeans.get(clazz));
     }
 
     @Override
@@ -134,7 +157,7 @@ public class DefaultBeanInitializer implements BeanInitializer {
         for (BeanPostProcessor beanPostProcessor : beanPostProcessors) {
             for (Object bean : beans) {
                 Object processedBean = beanPostProcessor.processBeanAfterInitialization(bean);
-                dependencies.put(bean.getClass(), processedBean);
+                registeredBeans.put(bean.getClass(), processedBean);
             }
         }
     }

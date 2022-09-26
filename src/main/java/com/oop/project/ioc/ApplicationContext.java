@@ -6,10 +6,11 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.*;
 
-@SuppressWarnings("unchecked")
 public class ApplicationContext {
     private static final Object mutex = new Object();
+
     private volatile static ApplicationContext instance;
+
     private final Logger LOGGER = LogManager.getLogger(ApplicationContext.class);
 
     private final Set<String> componentsToScan = new HashSet<>();
@@ -44,14 +45,6 @@ public class ApplicationContext {
         return result;
     }
 
-    public ApplicationContext initContext() {
-        Set<Class<?>> classes = scanAllPrefixes(componentsToScan, initializationRules);
-
-        Set<Object> objects = initClasses(classes);
-        beanInitializer.applyBeanPostProcessors(objects, beanPostProcessors);
-
-        return instance;
-    }
 
     private Set<Class<?>> scanAllPrefixes(Set<String> componentsToScan, Set<InitializationRule> initializationRules) {
         Set<Class<?>> classes = new HashSet<>();
@@ -97,14 +90,32 @@ public class ApplicationContext {
         return Objects.requireNonNull(instance.beanInitializer.getBean(clazz, args).orElse(null));
     }
 
-    public ApplicationContext withComponentsToScan(String... components) {
-        getContext().componentsToScan.addAll(Arrays.asList(components));
-        return getContext();
+
+    public static class ApplicationContextBuilder {
+        public ApplicationContextBuilder() {
+        }
+
+
+        public ApplicationContext withComponentsToScan(String... components) {
+            getContext().componentsToScan.addAll(Arrays.asList(components));
+            return getContext();
+        }
+
+        public ApplicationContext withBeanPostProcessors(BeanPostProcessor... beanPostProcessors) {
+            this.beanPostProcessors.addAll(Arrays.asList(beanPostProcessors));
+            return instance;
+        }
+
+
+        public ApplicationContext build() {
+            Set<Class<?>> classes = scanAllPrefixes(componentsToScan, initializationRules);
+
+            Set<Object> objects = initClasses(classes);
+            beanInitializer.applyBeanPostProcessors(objects, beanPostProcessors);
+
+            return instance;
+        }
     }
 
-    public ApplicationContext withBeanPostProcessors(BeanPostProcessor... beanPostProcessors) {
-        this.beanPostProcessors.addAll(Arrays.asList(beanPostProcessors));
-        return instance;
-    }
 
 }

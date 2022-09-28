@@ -10,18 +10,18 @@ public class Main {
     private static final Logger LOGGER = LogManager.getLogger(PokemonThread.class);
 
     public static void main(String[] args) {
-
         try {
-            ApplicationContext ctx = ApplicationContext.getContext()
+            ApplicationContext ctx = new ApplicationContext.ApplicationContextBuilder()
                     .withComponentsToScan("com.oop.project")
                     .withBeanPostProcessors(new LoggingBeanPostProcessor())
-                    .initContext();
+                    .build();
 
             ApplicationRunner applicationRunner = ctx.getBean(ApplicationRunner.class);
 
             applicationRunner.run();
         } catch (Exception e) {
             LOGGER.error("Unexpected exception: ", e);
+            throw new RuntimeException(e);
         }
     }
 

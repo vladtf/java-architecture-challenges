@@ -18,7 +18,7 @@ public class DefaultBeanInitializer implements BeanInitializer {
 
     public <T> Optional<T> initBean(Class<T> clazz, Object... args) {
         if (instantiationStack.contains(clazz)) {
-            throw new IllegalStateException("Bean is already instantiating. This means that there might be a circular dependency, instantiation stack: " + instantiationStack);
+            throw new IllegalStateException("Bean " + clazz.getName() + " is already being instantiating. This means that there might be a circular dependency, instantiation stack: " + instantiationStack);
         }
 
         instantiationStack.add(clazz);

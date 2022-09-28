@@ -14,8 +14,8 @@ import java.util.Collections;
 public class PokemonService extends ServiceBase<Pokemon> {
     private static final String INPUT_FILE_PATH = "pokemons.json";
 
-    public PokemonService() {
-        super(ApplicationContext.getBeanStatic(PokemonRepository.class));
+    public PokemonService(PokemonRepository pokemonRepository) {
+        super(pokemonRepository);
     }
 
     @Override

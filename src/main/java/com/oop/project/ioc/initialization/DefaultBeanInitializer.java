@@ -1,13 +1,14 @@
 package com.oop.project.ioc.initialization;
 
 import com.oop.project.ioc.annotations.Autowired;
-import com.oop.project.ioc.annotations.Bean;
+import com.oop.project.ioc.utils.ReflectionUtils;
 import lombok.SneakyThrows;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.lang.reflect.Constructor;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class DefaultBeanInitializer implements BeanInitializer {
     private final Logger LOGGER = LogManager.getLogger(DefaultBeanInitializer.class);
@@ -63,7 +64,7 @@ public class DefaultBeanInitializer implements BeanInitializer {
 
     private <T> void checkConstructorIsFullyAutowired(Constructor<T> constructor) {
         for (Class<?> parameterType : constructor.getParameterTypes()) {
-            if (!parameterType.isAnnotationPresent(Bean.class)) {
+            if (!ReflectionUtils.isBeanAnnotationPresent(parameterType)) {
                 throw new RuntimeException("Constructor for clazz " + constructor.getName() + " have parameters that can't be injected because are not beans.");
             }
         }
@@ -107,7 +108,7 @@ public class DefaultBeanInitializer implements BeanInitializer {
     }
 
     private static <T> boolean isPrototype(Class<T> clazz) {
-        return clazz.getAnnotation(Bean.class).prototype();
+        return ReflectionUtils.getBeanAnnotation(clazz).prototype();
     }
 
     @SneakyThrows
@@ -135,14 +136,6 @@ public class DefaultBeanInitializer implements BeanInitializer {
         return autowiredConstructors.get(0);
     }
 
-    private <T> Optional<T> putDependency(Class<T> clazz, Object obj) {
-        if (obj == null) {
-            return Optional.empty();
-        }
-
-        return Optional.of((T) obj);
-    }
-
     @Override
     @SuppressWarnings("unchecked")
     public <T> Optional<T> getBean(Class<T> clazz, Object... args) {
@@ -154,11 +147,24 @@ public class DefaultBeanInitializer implements BeanInitializer {
 
     @Override
     public void applyBeanPostProcessors(Set<Object> beans, Set<BeanPostProcessor> beanPostProcessors) {
-        for (BeanPostProcessor beanPostProcessor : beanPostProcessors) {
+        // TODO need to fix this implementation
+        applyBeanPostProcessors(beans);
+    }
+
+    @Override
+    public void applyBeanPostProcessors(Set<Object> beans) {
+        for (BeanPostProcessor beanPostProcessor : findAllBeanPostProcessors()) {
             for (Object bean : beans) {
                 Object processedBean = beanPostProcessor.processBeanAfterInitialization(bean);
                 registeredBeans.put(bean.getClass(), processedBean);
             }
         }
+    }
+
+    // TODO don't think this method must be here
+    private Set<BeanPostProcessor> findAllBeanPostProcessors() {
+        return registeredBeans.values().stream().filter(o -> o instanceof BeanPostProcessor)
+                .map(o -> (BeanPostProcessor) o)
+                .collect(Collectors.toSet());
     }
 }

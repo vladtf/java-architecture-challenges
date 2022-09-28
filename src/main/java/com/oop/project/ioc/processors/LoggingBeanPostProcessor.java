@@ -21,12 +21,9 @@ public class LoggingBeanPostProcessor implements BeanPostProcessor {
     @SuppressWarnings("unchecked")
     public <T> T processBeanAfterInitialization(T bean) {
         if (bean.getClass().isAnnotationPresent(Logged.class)) {
-            return (T) Enhancer.create(bean.getClass(), new MethodInterceptor() {
-                @Override
-                public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
-                    log.info("Post processor intercepted call of: {}", method.getName());
-                    return method.invoke(bean, objects);
-                }
+            return (T) Enhancer.create(bean.getClass(), (MethodInterceptor) (o, method, objects, methodProxy) -> {
+                log.info("Post processor intercepted call of: {}", method.getName());
+                return method.invoke(bean, objects);
             });
         }
 

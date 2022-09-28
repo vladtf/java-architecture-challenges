@@ -1,6 +1,7 @@
 package com.oop.project.ioc.initialization;
 
 import com.oop.project.ioc.annotations.Bean;
+import com.oop.project.ioc.utils.ReflectionUtils;
 
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -19,6 +20,6 @@ public class SkipLazyBeanInitializationRule implements InitializationRule {
     }
 
     private boolean isNotLazy(Class<?> aClass) {
-        return !aClass.getAnnotation(Bean.class).lazy();
+        return !ReflectionUtils.getBeanAnnotation(aClass).lazy();
     }
 }

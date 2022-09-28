@@ -2,6 +2,7 @@ package com.oop.project.ioc.initialization;
 
 import com.oop.project.ioc.annotations.Autowired;
 import com.oop.project.ioc.annotations.Bean;
+import com.oop.project.ioc.utils.ReflectionUtils;
 import lombok.extern.log4j.Log4j2;
 import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;
@@ -17,7 +18,8 @@ public class DependentComponentScanner implements ComponentsScanner {
     private final Set<Class<?>> instantiationStack = new HashSet<>();
 
     private static boolean isPrototypeOrLazyBean(Class<?> clazz) {
-        return clazz.getAnnotation(Bean.class).lazy() || clazz.getAnnotation(Bean.class).prototype();
+        Bean beanAnnotation = ReflectionUtils.getBeanAnnotation(clazz);
+        return beanAnnotation.lazy() || beanAnnotation.prototype();
     }
 
     @Override
@@ -40,16 +42,21 @@ public class DependentComponentScanner implements ComponentsScanner {
         Reflections reflections = new Reflections(prefix, new SubTypesScanner(false));
         HashSet<Class<?>> classesInPrefix = new HashSet<>(reflections.getSubTypesOf(Object.class));
 
-        return classesInPrefix.stream()
+        Set<Class<?>> classesList = classesInPrefix.stream()
                 .filter(this::isNotAnnotation)
-                .filter(this::isBeanAnnotated)
+                .filter(this::isBeanAnnotated).collect(Collectors.toSet());
+
+
+        Set<Class<?>> classes = classesList.stream()
                 .map(this::scanClass)
                 .flatMap(Collection::stream)
                 .collect(Collectors.toSet());
+
+        return classes;
     }
 
     private boolean isBeanAnnotated(Class<?> aClass) {
-        return aClass.isAnnotationPresent(Bean.class);
+        return ReflectionUtils.isBeanAnnotationPresent(aClass);
     }
 
     private boolean isNotAnnotation(Class<?> aClass) {

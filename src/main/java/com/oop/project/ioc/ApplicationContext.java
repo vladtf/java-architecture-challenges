@@ -26,7 +26,11 @@ public class ApplicationContext {
 
 
     private ApplicationContext() {
-        initializationRules = new InitializationRulesBuilder().withInitRule(new SkipLazyBeanInitializationRule()).withInitRule(new SkipPrototypeBeanInitializationRule()).withInitRule(new SkipAnnotationBeanInitializationRule()).build();
+        initializationRules = new InitializationRulesBuilder()
+                .withInitRule(new SkipLazyBeanInitializationRule())
+                .withInitRule(new SkipPrototypeBeanInitializationRule())
+                .withInitRule(new SkipAnnotationBeanInitializationRule())
+                .build();
     }
 
     public static ApplicationContext getContext() {
@@ -50,11 +54,9 @@ public class ApplicationContext {
     public static class ApplicationContextBuilder {
         private final ApplicationContext ctx;
 
-
         public ApplicationContextBuilder() {
             ctx = new ApplicationContext();
         }
-
 
         public ApplicationContextBuilder withComponentsToScan(String... components) {
             ctx.componentsToScan.addAll(Arrays.asList(components));
@@ -65,7 +67,6 @@ public class ApplicationContext {
             ctx.beanPostProcessors.addAll(Arrays.asList(beanPostProcessors));
             return this;
         }
-
 
         public ApplicationContext build() {
             Set<Class<?>> classes = scanAllPrefixes(ctx.componentsToScan, ctx.initializationRules);
@@ -114,8 +115,5 @@ public class ApplicationContext {
 
             return classes;
         }
-
     }
-
-
 }

@@ -1,6 +1,7 @@
 package com.oop.project.ioc.initialization;
 
 import com.oop.project.ioc.annotations.Bean;
+import com.oop.project.ioc.utils.ReflectionUtils;
 
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -19,6 +20,6 @@ public class SkipPrototypeBeanInitializationRule implements InitializationRule {
     }
 
     private boolean isNotPrototype(Class<?> aClass) {
-        return !aClass.getAnnotation(Bean.class).prototype();
+        return !ReflectionUtils.getBeanAnnotation(aClass).prototype();
     }
 }

@@ -15,6 +15,7 @@ public abstract class ServiceBase<T extends Model> {
 
     public ServiceBase(FileRepository<T> fileRepository) {
         this.fileRepository = fileRepository;
+        // TODO this method must be called in postConstruct
         updateItems(getInputFilePath());
     }
 
@@ -24,9 +25,7 @@ public abstract class ServiceBase<T extends Model> {
     }
 
     public T getByName(String name) {
-        return items.stream().filter(t -> t.getName().equals(name))
-                .findFirst()
-                .orElse(null);
+        return fileRepository.findByName(name, getInputFilePath());
     }
 
     public List<T> getAll() {

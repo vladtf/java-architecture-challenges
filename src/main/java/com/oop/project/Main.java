@@ -13,7 +13,6 @@ public class Main {
         try {
             ApplicationContext ctx = new ApplicationContext.ApplicationContextBuilder()
                     .withComponentsToScan("com.oop.project")
-                    .withBeanPostProcessors(new LoggingBeanPostProcessor())
                     .build();
 
             ApplicationRunner applicationRunner = ctx.getBean(ApplicationRunner.class);

@@ -1,11 +1,12 @@
 package com.oop.project.repositories;
 
 import com.oop.project.ioc.annotations.Bean;
+import com.oop.project.ioc.annotations.Repository;
 import com.oop.project.models.Pokemon;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Bean
+@Repository
 public class PokemonRepository extends FileRepository<Pokemon> {
     private static final Logger LOGGER = LogManager.getLogger(PokemonRepository.class);
 

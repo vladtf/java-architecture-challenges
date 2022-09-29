@@ -37,10 +37,8 @@ public abstract class FileRepository<T extends Model> {
 
     // todo may try to implement filter pattern (create an object that will filter and register a filter by name)
     public T findByName(String name, String inputFilePath) {
-        throw new RuntimeException("asd");
-
-//        return findAll(inputFilePath).stream()
-//                .filter(item -> name.equals(item.getName()))
-//                .findFirst().orElse(null);
+        return findAll(inputFilePath).stream()
+                .filter(item -> name.equals(item.getName()))
+                .findFirst().orElse(null);
     }
 }

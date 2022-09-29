@@ -17,8 +17,8 @@ import java.util.Set;
 public class ItemService extends ServiceBase<Item> {
     private static final String INPUT_FILE_PATH = "items.json";
 
-    public ItemService() {
-        super(ApplicationContext.getBeanStatic(ItemRepository.class));
+    public ItemService(ItemRepository repository) {
+        super(repository);
     }
 
     @Override
@@ -38,4 +38,9 @@ public class ItemService extends ServiceBase<Item> {
 
         return items;
     }
+
+    public void throwException(){
+        ((ItemRepository)fileRepository).throwException();
+    }
+
 }

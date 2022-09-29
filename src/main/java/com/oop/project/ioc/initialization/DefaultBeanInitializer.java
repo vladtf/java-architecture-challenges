@@ -153,10 +153,11 @@ public class DefaultBeanInitializer implements BeanInitializer {
 
     @Override
     public void applyBeanPostProcessors(Set<Object> beans) {
-        for (BeanPostProcessor beanPostProcessor : findAllBeanPostProcessors()) {
-            for (Object bean : beans) {
-                Object processedBean = beanPostProcessor.processBeanAfterInitialization(bean);
-                registeredBeans.put(bean.getClass(), processedBean);
+        for (Object bean : beans) {
+            Class<?> beanClass = bean.getClass();
+            for (BeanPostProcessor beanPostProcessor : findAllBeanPostProcessors()) {
+                Object processedBean = beanPostProcessor.processBeanAfterInitialization(registeredBeans.get(beanClass));
+                registeredBeans.put(beanClass, processedBean);
             }
         }
     }

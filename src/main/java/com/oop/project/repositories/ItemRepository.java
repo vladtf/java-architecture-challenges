@@ -18,4 +18,9 @@ public class ItemRepository extends FileRepository<Item> {
         return Item[].class;
     }
 
+
+    public void throwException(){
+        throw new RuntimeException("asd");
+    }
+
 }

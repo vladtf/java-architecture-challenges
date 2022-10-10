@@ -15,7 +15,7 @@ import java.util.Collections;
 import java.util.List;
 
 // Repository pattern to encapsulate raw reading from input files
-public abstract class FileRepository<T extends Model> {
+public abstract class  FileRepository<T extends Model> {
     private static final Logger LOGGER = LogManager.getLogger(ItemRepository.class);
 
     public abstract Class<T[]> getModelClass();
@@ -36,7 +36,7 @@ public abstract class FileRepository<T extends Model> {
     }
 
     // todo may try to implement filter pattern (create an object that will filter and register a filter by name)
-    public T findByName(String name, String inputFilePath) {
+    public T findByName(String name, String inputFilePath){
         return findAll(inputFilePath).stream()
                 .filter(item -> name.equals(item.getName()))
                 .findFirst().orElse(null);
